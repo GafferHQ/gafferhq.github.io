@@ -58,15 +58,8 @@
                 <li {% if page.url contains '/demos' %} class="active" {% endif %}>
                     <a class="menu" href="{{ site.baseurl }}/demos/">Demos</a>
                 </li>
-                <li>
-                    <a class="menu-has-sub">Documentation <i class="fa fa-angle-down"></i></a>
-                    <!-- Dropdown -->
-                    <ul class="sub-dropdown dropdown">
-                        <li><a href="{{ site.baseurl }}/resources/documents/latest/GafferUserGuide.pdf">User Guide</a></li>
-                        <li><a href="{{ site.baseurl }}/resources/documents/latest/GafferNodeReference.pdf">Node Reference</a></li>
-                        <li><a href="{{ site.baseurl }}/resources/documents/latest/GafferLicenses.pdf">Licenses</a></li>
-                    </ul>
-                    <!-- End Dropdown -->
+                 <li {% if page.url contains '/documentation' %} class="active" {% endif %}>
+                    <a class="menu" href="{{ site.baseurl }}/documentation/">Documentation</a>
                 </li>
             </ul>
         </div>
