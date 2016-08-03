@@ -1,5 +1,6 @@
 paginate: 1
 permalink: /blog/:title/
 baseurl:
+google_analytics: UA-81902401-1
 gems:
    - jekyll-paginate

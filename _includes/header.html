@@ -19,6 +19,9 @@
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/img/GafferLogoMini.png" />
     <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/GafferLogoMini.png" />
     <link rel="apple-touch-icon" type="image/png" href="{{ site.baseurl }}/img/GafferLogoMini.png" />
+    {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
 </head>
 
 <body>
