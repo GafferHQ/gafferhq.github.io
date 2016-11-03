@@ -14,7 +14,7 @@
 #
 # To generate the site and view it via a local server :
 #
-# > bundle exec jekyll serve --baseurl ""
+# > bundle exec jekyll serve
 
 source 'https://rubygems.org'
 gem 'therubyracer'
