@@ -15,9 +15,9 @@ title: Getting Started With Gaffer
             <div class="container">
                 <br/>
                 <div>
-                    <a class="btn btn-md btn-color-b" href="https://github.com/ImageEngine/gaffer/releases/download/0.29.0.0/gaffer-0.29.0.0-linux.tar.gz">Linux Download</a>
+                    <a class="btn btn-md btn-color-b" href="https://github.com/ImageEngine/gaffer/releases/download/{{ site.latestGafferVersion }}/gaffer-{{ site.latestGafferVersion }}-linux.tar.gz">Download for Linux</a>
 		    <span class="btn-space-10 xs-hidden"></span>
-		    <a class="btn btn-lg btn-color-line" href="https://github.com/ImageEngine/gaffer/releases/download/0.29.0.0/gaffer-0.29.0.0-osx.tar.gz">Mac Download</a>
+		       <a class="btn btn-lg btn-color-line" href="https://github.com/ImageEngine/gaffer/releases/download/{{ site.latestGafferVersion }}/gaffer-{{ site.latestGafferVersion }}-osx.tar.gz">Download for Mac</a>
                 </div>
             </div>
         </section>
@@ -30,7 +30,7 @@ title: Getting Started With Gaffer
                 <p>Once you have unpacked the download, you will need to add <code>&lt;GAFFER_INSTALL_PATH&gt;/bin</code> to your <code>$PATH</code> environment variable (substituting <code>&lt;GAFFER_INSTALL_PATH&gt;</code> with the path to the unpacked directory).</p>
 		<p>For example, you can achieve this in a bash shell with the following command:</p>
                 <div class="well">
-                    <code>$ export PATH=/home/jblogs/Downloads/gaffer-0.29.0.0/bin:${PATH}</code>
+                    <code>$ export PATH=/home/jblogs/Downloads/gaffer-{{ site.latestGafferVersion }}/bin:${PATH}</code>
                 </div>
 		<p>That's it! You can launch Gaffer and start rendering with Appleseed:</p>
                 <div class="well">

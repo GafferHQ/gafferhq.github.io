@@ -4,3 +4,5 @@ baseurl:
 google_analytics: UA-81902401-1
 gems:
    - jekyll-paginate
+
+latestGafferVersion: 0.30.0.0
