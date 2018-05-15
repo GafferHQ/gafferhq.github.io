@@ -13,3 +13,9 @@ docker run -t --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-page
 ```
 
 You can then view the site by navigating to http://0.0.0.0:4000 in your web browser. Changes made to the site will be automatically picked up by the server and visible upon a refresh in the browser.
+
+If docker is unavailble to you, you can use ruby directly as well:
+
+```
+bundle exec jekyll serve
+```
