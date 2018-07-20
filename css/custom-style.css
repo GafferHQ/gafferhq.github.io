@@ -33,5 +33,6 @@ figure {
 }
 
 .inner-intro {
-    height: 430px;
+    height: 300px;
+    padding: initial;
 }
