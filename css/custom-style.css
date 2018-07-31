@@ -36,3 +36,7 @@ figure {
     height: 300px;
     padding: initial;
 }
+
+footer.footer {
+    background-color: #323232;
+}
