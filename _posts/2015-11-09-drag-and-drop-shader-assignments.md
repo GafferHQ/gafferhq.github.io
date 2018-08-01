@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Tip of the Day"
-subtitle: "Drag and drop objects to assign shaders"
+title: "Drag and drop objects to assign shaders"
+subtitle: "Tip of the Day"
 icon: "/img/dragAndDropShaderAssignments/assignAnimation.gif"
 ---
 

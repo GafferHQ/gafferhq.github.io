@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Tip of the Day"
-subtitle: "Use autocomplete in path widgets"
+title: "Use autocomplete in path widgets"
+subtitle: "Tip of the Day"
 icon: /img/pathWidget/tabCompleteAnimation.gif
 ---
 

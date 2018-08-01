@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Tip of the Day"
-subtitle: "Shift+Alt click to select upstream nodes"
+title: "Shift+Alt click to select upstream nodes"
+subtitle: "Tip of the Day"
 icon: "/img/upstreamSelect/upstreamSelectAnimation.gif"
 ---
 
