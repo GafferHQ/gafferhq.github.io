@@ -5,4 +5,4 @@ google_analytics: UA-81902401-1
 gems:
    - jekyll-paginate
 
-latestGafferVersion: 0.47.0.0
+latestGafferVersion: 0.48.0.0
