@@ -1,137 +1,142 @@
 ---
-title: Gaffer Home
+title: Gaffer | Home
 ---
 
 {% include header.html %}
 
-<!-- Intro Section -->
-<section id="intro" class="dark-bg">
-    <!-- Hero Slider Section -->
+<!-- Carousel Section -->
+<section id="carousel" class="dark-bg">
     <div class="owl-carousel fullwidth-slider white o-flow-hidden">
-        {% include slide.html caption="Make pictures" image="http://image-engine.com/wp-content/uploads/2017/06/featuredimage.jpg" %} <!-- Lost in Space S1 heroes -->
-        {% include slide.html caption="Connect nodes" image="img/headers/carousel_bot.jpg" addClasses="overlay-dark" %} <!-- Gaffy in Gaffer -->
-        {% include slide.html caption="Make pictures" image="http://image-engine.com/wp-content/uploads/2017/07/WOL14.jpg" %} <!-- Logan -->
-        {% include slide.html caption="Make pictures" image="http://image-engine.com/wp-content/uploads/2018/01/704-0420-3500_ALT.1150.jpg" style="background-position: center 30%;" %} <!-- GoT S7 -->
-        {% include slide.html caption="Connect nodes" image="img/headers/carousel_graph.jpg" addClasses="overlay-dark" %} <!-- Node graph in Gaffer -->
-        {% include slide.html caption="Make pictures" image="http://image-engine.com/wp-content/uploads/2018/04/101_040_600_AO.1006.jpg" style="background-position: center top;" addClasses="overlay-dark" %} <!-- Lost in Space S1 forest -->
+        {% include slide.html caption="Create Scenes" image="http://image-engine.com/wp-content/uploads/2017/06/featuredimage.jpg" %} <!-- Lost in Space S1 heroes -->
+        {% include slide.html caption="Build Shaders" image="http://image-engine.com/wp-content/uploads/2017/07/WOL14.jpg" %} <!-- Logan -->
+        {% include slide.html caption="Design Workflows" image="http://image-engine.com/wp-content/uploads/2018/01/704-0420-3500_ALT.1150.jpg" style="background-position: center 30%;" %} <!-- GoT S7 -->
     </div>
-    <!-- End Hero Slider Section -->
 </section>
-<!-- End Intro Section -->
+<!-- End Carousel Section -->
 
 <!--About Section-->
-<section id="about" class="wow fadeIn ptb ptb-60">
+<section id="about" class="wow fadeIn ptb-60">
     <div class="container">
-        <div class="row text-center">
-            <div class="col-md-8 col-md-offset-2 col-lg-offset-0 col-lg-12">
-                <h3 class="h4">About Gaffer</h3>
-                <div class="spacer-15"></div>
-                <p class="lead">Gaffer is a general purpose node-based application designed for use in the visual effects industry.</p>
-		<p>It provides basic tools for procedural scene generation, shader authoring, rendering, and image compositing.</p>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="text-center landing">Introducing Gaffer</h1>
+                <p class="lead">Gaffer is a free, open-source, node-based VFX application that enables look developers, lighters, and compositors to easily build, tweak, iterate, and render scenes. Built with flexibility in mind, Gaffer supports in-application scripting in Python and OSL, so VFX artists and technical directors can design shaders, automate processes, and build production workflows.</p>
+                <p class="lead">With hooks in both C++ and Python, Gaffer's readily extensible API provides both professional studios and enthusiasts with the tools to add their own custom modules, nodes, and UI.</p>
+                <p class="lead">The workhorse of the production pipeline at <a href="https://image-engine.com" alt="Image Engine Design Inc. homepage">Image Engine Design Inc.</a>, Gaffer has been used to build award-winning VFX for shows such as Jurassic World: Fallen Kingdom, Lost in Space, Logan, and Game of Thrones.</p>
             </div>
-        </div>    
+        </div>
     </div>
 </section>
 <!-- End About Section-->
 
-<hr />
+<!-- Tour Section-->
+<section id="tour" class="container ptb-60 wow">
+    <div class="row ptb-15 wow">
+        <div class="col-xs-12 col-md-6">
+            <!-- Lost in Space S1 forest robot grey -->
+            <a class="cbox-gallary1" href="http://image-engine.com/wp-content/uploads/2018/04/101_040_600_AO.1006.jpg">
+                <div class="bg-img" style="height: 300px; background-image: url(http://image-engine.com/wp-content/uploads/2018/04/101_040_600_AO.1006.jpg);"></div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <h3 class="mt-60 text-center">Create Scenes</h3>
+            <p>Import, build, and manipulate scenes non-destructively. Duplicate, combine, join, prune, split, and inspect scenes of arbitrary complexity using the robust node graph and scene hierarchy interfaces.</p>
+        </div>
+    </div>
+    <div class="row ptb-15 wow">
+        <div class="col-xs-12 col-md-6 pull-right">
+            <!-- Shader graph -->
+            <a class="cbox-gallary1" href="img/headers/header_graph.jpg">
+                <div class="bg-img" style="height: 300px; background-image: url(img/headers/header_graph.jpg); background-position: right"></div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <h3 class="mt-60 text-center">Build Shaders</h3>
+            <p>With full support for <a href="https://www.solidangle.com/arnold" alt="Arnold homepage">Arnold</a> and <a href="http://www.3delight.com" alt="3Delight homepage">3Delight's</a> powerful industry-standard shaders, use the robust node plug-outs to quickly build compelling looks. For extra customization, arrange and write custom shaders using <a href="http://opensource.imageworks.com/?p=osl" alt="Open Shading Language homepage">Open Shading Language</a> nodes and code.</p>
+        </div>
+    </div>
+    <div class="row ptb-15 wow">
+        <div class="col-xs-12 col-md-6">
+            <!-- Gaffy IPR -->
+            <a class="cbox-gallary1" href="img/headers/carousel_bot.jpg">
+                <div class="bg-img text-center" style="height: 300px; background-image: url(img/headers/carousel_bot.jpg); background-position: left"></div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <h3 class="mt-60 text-center">Design Workflows</h3>
+            <p class="">Whether for 3D sequences, 2D image processing, or pipeline processes, design workflows all within a single tool. Use logic, filters, and expressions to make scalable node networks for automated and responsive VFX solutions.</p>
+        </div>
+    </div>
+</section>
+<!-- End Tour Section -->
+
+<!-- Video Section -->
+<section id="video" class="container-fluid ptb ptb-sm-80 text-center dark-bg wow">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-icon-top ptb-0"><i class="fa fa-film"></i></div>
+            <h2 class="mtb-30">Gaffer in the Studio</h2>
+            <div class="container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://player.vimeo.com/video/201047816" class="embed-responsive-item" frameborder="0" scrollable="no" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Video Section -->
 
 <!-- Features Section -->
-<section id="service" class="ptb ptb-sm-80">
-    <div class="wow container text-center">
-      <h3>features</h3>
-      <div class="spacer-20"></div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="page-icon-top"><i class="ion ion-ios-speedometer"></i></div>
-                <h5>powerful</h5>
-                <p>Gaffer provides a multithreaded deferred evaluation engine, enabling you to work with large 3D and 2D datasets, and develop flexible procedural workflows.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-45">
-                <div class="page-icon-top"><i class="ion ion-ios-compose"></i></div>
-                <h5>customisable</h5>
-                <p>Gaffer is built to be customisable throughout. Be it a simple scripted configuration tweak, complex expression, custom node or user interface, even a full blown application, its open APIs enable you to do what you need.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-45">
-                <div class="page-icon-top"><i class="ion ion-ios-people"></i></div>
-                <h5>open source</h5>
-                <p>Distributed under the BSD license, Gaffer builds upon a wealth of open-source VFX libraries including OpenEXR, OpenImageIO, OpenColorIO, OpenShadingLanguage, Cortex, and the Gaffer frameworks themselves.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-45">
-                <div class="page-icon-top"><i class="ion ion-ios-download"></i></div>
-                <h5>Renderer Agnostic</h5>
-                <p>Gaffer utilises a renderer abstraction layer enabling common workflows between all your favourite renderers. Gaffer currently supports Arnold, 3Delight and Appleseed.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-45">
-                <div class="page-icon-top"><i class="ion ion-network"></i></div>
-                <h5>extensible</h5>
-                <p>Feel free to add new renderers, new nodes, or integrate with your renderfarm. With Gaffer derived apps you can invent new datatypes to flow through the node graph, such as asset dependencies or simulation operations.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-45">
-                <div class="page-icon-top"><i class="ion ion-settings"></i></div>
-                <h5>unfinished</h5>
-                <p>Gaffer is becoming more capable by the day, but it is still a work in progress. Itching to fix a bug or contribute a cool new enhancement? Want to add support for OpenVDB, Bullet or a new renderer? <strong><a href="https://github.com/ImageEngine/gaffer">Fork it on GitHub.</a></strong></p>
-            </div>
+<section id="service" class="container ptb ptb-sm-80 wow">
+    <div class="row text-center">
+        <h2>Features</h2>
+    </row>
+    <div class="row">
+        <div class="col-md-4 mb-30 mt-60">
+            <div class="page-icon-top pb-0"><i class="fa fa-smile-o"></i></div>
+            <h4>Free</h4>
+            <p>Released under the BSD License. Free to use – at home or in a studio – and modify – be it a simple configuration tweak, or a complete application.</p>
+        </div>
+        <div class="col-md-4 mb-30 mt-60">
+            <div class="page-icon-top pb-0"><i class="fa fa-tachometer"></i></div>
+            <h4>Powerful</h4>
+            <p>Gaffer's multi-threaded, deferred evaluation engine enables work with large 3D and 2D data sets without slow-down.</p>
+        </div>
+        <div class="col-md-4 mb-30 mt-60">
+            <div class="page-icon-top pb-0"><i class="fa fa-cogs"></i></div>
+            <h4>Flexible</h4>
+            <p>A renderer abstraction layer enables common workflows between several renderers. Supports <a href="https://www.solidangle.com/arnold" alt="Arnold homepage">Arnold</a>, <a href="http://appleseedhq.net" alt="Appleseed homepage">Appleseed</a>, <a href="http://www.3delight.com" alt="3Delight homepage">3Delight</a>, and <a href="https://renderman.pixar.com/products/tools/tractor.html" alt="Tractor homepage">Tractor</a>.</p>
+        </div>
+    </div>
+    <div class="row pt-15">
+        <div class="col-md-4 mb-30 mt-60">
+            <div class="page-icon-top pb-0"><i class="fa fa-code"></i></div>
+            <h4>Extensible</h4>
+            <p>Add UI, nodes, and modules. Integrate with new renderers and your render farm. Implement new datatypes to flow through the node graph.</p>
+        </div>
+        <div class="col-md-4 mb-30 mt-60">
+            <div class="page-icon-top pb-0"><i class="fa fa-users"></i></div>
+            <h4>Open Source</h4>
+            <p>Built on a wealth of tested open-source VFX libraries, including <a href="http://www.openexr.com" alt="OpenEXR homepage">OpenEXR</a>, <a href="https://sites.google.com/site/openimageio/home" alt="OpenImageIO homepage">OpenImageIO</a>, <a href="http://opencolorio.org" alt="OpenColorIO homepage">OpenColorIO</a>, <a href="http://opensource.imageworks.com/?p=osl" alt="Open Shading Language homepage">Open Shading Language</a>, and <a href="https://github.com/ImageEngine/cortex" alt="Cortex GitHub project">Cortex</a>.</p>
+        </div>
+        <div class="col-md-4 mb-30 mt-60">
+            <div class="page-icon-top pb-0"><i class="fa fa-road"></i></div>
+            <h4>Ongoing</h4>
+            <p>With new features constantly added by industry experts, development is further enhanced by VFX artists from around the world on <a href="https://github.com/gafferHQ/gaffer" alt="Gaffer GitHub project">GitHub</a>.</p>
         </div>
     </div>
 </section>
-<!-- End Service Section -->
+<!-- End Features Section -->
 
-<!-- Statement Section -->
-<section id="statement" class="overlay-dark80 dark-bg ptb ptb-sm-80">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <a class="cbox-iframe" href="">
-                    <div class="page-icon-top"><i class="ion ion-ios-film-outline"></i></div>
-                </a>
-                <h4>Watch our Introductory Video for Gaffer.</h4>
-                <div class="spacer-15"></div>
-                <a class="cbox-iframe btn btn-md btn-white" href="https://player.vimeo.com/video/127102421">Watch Now</a>
-            </div>
+<!-- Call to Action Section -->
+<section id="download" class="container ptb-80 wow">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <a class="btn btn-lg btn-color-b" style="width: 16em; font-size: 16px" href="{{ site.baseurl }}/download/"><i class="fa fa-download"></i>Get Gaffer</a>
+            <a class="btn btn-lg btn-color-b mt-5" style="width: 16em; font-size: 16px; margin-top: 5px" href="https://github.com/gafferHQ/gaffer"><i class="fa fa-github"></i>Follow Gaffer</a>
         </div>
     </div>
 </section>
-<!-- End Statement Section -->
-
-<!-- Papers Section -->
-<section id="about" class="wow fadeIn ptb ptb-60">
-    <div class="container">
-        <div class="row">
-	    <div class="col-md-8 col-md-offset-2 col-lg-offset-0 col-lg-12">
-		<h4 class="text-center">Read our Papers</h4>
-	    </div>
-	    <div class="col-md-2 col-md-offset-2 col-lg-offset-0 col-lg-4"></div>
-            <div class="col-md-8 col-md-offset-2 col-lg-offset-0 col-lg-8">
-                <div class="spacer-15"></div>
-                <!-- ACM DL Article: Gaffer: an open-source application framework for VFX -->
-		<div class="acmdlitem" id="item2947696">
-			<img src="http://dl.acm.org/images/oa.gif" width="25" height="25" border="0" alt="ACM DL Author-ize service" style="vertical-align:middle"/>
-			<strong>
-				<a href="http://dl.acm.org/authorize?N19757" title="Gaffer: an open-source application framework for VFX">Gaffer: an open-source application framework for VFX</a>
-			</strong>
-			<br>
-			<div style="margin-left:30px">
-				DigiPro '16 Proceedings of the Symposium on Digital Production,&nbsp;2016
-			</div>
-		</div>
-		<div class="spacer-15"></div>
-		<!-- ACM DL Article: Developing a unified pipeline with character -->
-		<div class="acmdlitem" id="item2491837">
-			<img src="http://dl.acm.org/images/oa.gif" width="25" height="25" border="0" alt="ACM DL Author-ize service" style="vertical-align:middle"/>
-			<strong>
-				<a href="http://dl.acm.org/authorize?N19758" title="Developing a unified pipeline with character">Developing a unified pipeline with character</a>
-			</strong>
-			<br>
-			<div style="margin-left:30px">
-				DigiPro '13 Proceedings of the Symposium on Digital Production,&nbsp;2013
-			</div>
-		</div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Papers Section -->
+<!-- End Call to Action Section -->
 
 {% include footer.html %}
-
