@@ -27,22 +27,21 @@
 
 <body>
 
-<header id="header" class="header" style="height:100px">
-    <div class="container header-inner">
-        <!-- Logo -->
-        <div class="logo">
-            <a href="{{ site.baseurl }}/index.html">
-                <img class="logo-light" src="{{ site.baseurl }}/img/GafferLogo.png" alt="Gaffer" />
-                <img class="logo-dark" src="{{ site.baseurl }}/img/GafferLogo.png" alt="Gaffer" />
-            </a>
-        </div>
-        <!-- End Logo -->
+    <header id="header" class="header">
+        <div class="container header-inner">
+            <!-- Logo -->
+            <div class="logo" ondragstart="return false;" ondrop="return false;">
+                <a href="{{ site.baseurl }}/index.html" focusable="false">
+                    <img src="{{ site.baseurl }}/img/GafferLogoNav.svg" alt="Gaffer" />
+                </a>
+            </div>
+            <!-- End Logo -->
 
-        <!-- Mobile Navbar Icon -->
-        <div class="nav-mobile nav-bar-icon">
-            <span></span>
-        </div>
-        <!-- End Mobile Navbar Icon -->
+            <!-- Mobile Navbar Icon -->
+            <div class="nav-mobile nav-bar-icon">
+                <span></span>
+            </div>
+            <!-- End Mobile Navbar Icon -->
 
         <!-- Navbar Navigation -->
         <div class="nav-menu">
@@ -53,26 +52,23 @@
                 <li {% if page.url contains '/download' %} class="active" {% endif %}>
                     <a class="menu" href="{{ site.baseurl }}/download/"><i class="fa fa-download"></i> Download</a>
                 </li>
-                <li {% if page.url contains '/community' %} class="active" {% endif %}>
-                    <a class="menu" href="{{ site.baseurl }}/community/">Community</a>
+                <li>
+                    <a class="menu" href="https://github.com/gafferHQ/gaffer"><i class="fa fa-github"></i> GitHub</a>
                 </li>
                 <li {% if page.url contains '/news' %} class="active" {% endif %}>
                     <a class="menu" href="{{ site.baseurl }}/news/">News</a>
                 </li>
-                <li {% if page.url contains '/forum' %} class="active" {% endif %}>
-                    <a class="menu" href="{{ site.baseurl }}/forum/">Forum</a>
+                <li {% if page.url contains '/community' %} class="active" {% endif %}>
+                    <a class="menu" href="{{ site.baseurl }}/community/">Community</a>
                 </li>
-                 <li {% if page.url contains '/documentation' %} class="active" {% endif %}>
+                <li {% if page.url contains '/documentation' %} class="active" {% endif %}>
                     <a class="menu" href="{{ site.baseurl }}/documentation/{{ site.latestGafferVersion }}">Documentation</a>
                 </li>
             </ul>
         </div>
         <!-- End Navbar Navigation -->
 
-    </div>
-</header>
+        </div>
+    </header>
 
-<hr>
-<div class="row" id="contentContainer">
-
-
+    <div id="content-container">

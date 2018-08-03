@@ -1,3 +1,38 @@
+/* Prevent header resizing on scroll (stop-gap) */
+.header, .header-inner {
+    height: 64px !important;
+}
+
+.nav-menu ul.nav-menu-inner > li > a {
+    padding: 26px 15px;
+    font-size: 14px;
+}
+
+/* Make header fully opaque on scroll, replace box shadow with proper border */
+.header.header-prepare, .header.header-light.header-prepare {
+    background-color: #fff;
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Make logo a respectable size */
+.logo {
+    height: 48px;
+    width: 199.58px;
+}
+
+.logo a {
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 8px !important;
+}
+
+/* Prevent dotted outline on logo click */
+.logo a:active, .logo a:focus {
+    outline-style: none;
+    -moz-outline-style:none;
+}
+
 /* Make paragraphs more readable */
 body {
     font-size: 18px;
