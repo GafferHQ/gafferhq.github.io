@@ -1,5 +1,5 @@
 paginate: 1
-permalink: /blog/:title/
+permalink: /news/:title/
 baseurl:
 google_analytics: UA-81902401-1
 gems:
