@@ -11,7 +11,7 @@ Gaffer has a very useful node bookmarking feature, which can make working with l
 
 When a node is bookmarked, it becomes accessible from anywhere in the _Graph Editor_ (with one exception). This allows you to quickly connect to a bookmarked node from other nodes, even when not currently in frame in the Graph Editor.
 
-<img class="mtb-30" src="/resources/images/bookmarking-nodes.gif" alt="Demo of connecting to bookmarked nodes.">
+<img class="mtb-30" src="/resources/images/tip-bookmarking-nodes.gif" alt="Demo of connecting to bookmarked nodes.">
 
 To bookmark a node:
 
