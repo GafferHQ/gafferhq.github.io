@@ -1,7 +1,7 @@
 paginate: 1
 permalink: /news/:title/
 baseurl:
-google_analytics: UA-81902401-1
+google_analytics: UA-125947352-1
 gems:
    - jekyll-paginate
 
