@@ -26,15 +26,19 @@ title: Gaffer | News
 
                     {% assign iconPrefix = post.icon | slice: 0, 4 %}
 
-                    {% if iconPrefix == "http" %}
-                    
-                        <img src="{{ post.icon }}" alt="" />
-                    
-                    {% else %}
-                    
-                        <img src="{{ site.baseurl }}{{ post.icon }}" alt="" />
-                    
-                    {% endif %}
+                    {% unless iconPrefix == "" %}
+
+                        {% if iconPrefix == "http" %}
+                        
+                            <img src="{{ post.icon }}" alt="" />
+
+                        {% else %}
+                        
+                            <img src="{{ site.baseurl }}{{ post.icon }}" alt="" />
+
+                        {% endif %}
+                        
+                    {% endunless %}
 
                 </div>
                 <div class="mb-30">
