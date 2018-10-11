@@ -1,6 +1,7 @@
 paginate: 1
 permalink: /news/:title/
 baseurl:
+future: false
 google_analytics: UA-125947352-1
 gems:
    - jekyll-paginate
