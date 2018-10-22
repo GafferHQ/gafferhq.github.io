@@ -13,7 +13,7 @@ The Gaffer team are proud to present their Birds of a Feather presentation from 
 
 A big thanks to John, Andrew, Don, Daniel, and Murray for bringing everyone up to speed on Gaffer's history, the most recent developments, and its future, as well as demonstrating some of Image Engine's customizations of the project.
 
-Additional thanks to Brian from Whiskeytree, who was scheduled to present his company's Gaffer integration, which they accomplished with very little outside help (!), but unfortunately he could not attend.
+Additional thanks to Brian from Whiskytree, who was scheduled to present his company's Gaffer integration, which they accomplished with very little outside help (!), but unfortunately he could not attend.
 
 We are also deeply grateful to Michele and Alexander from Cinesite for telling their story of adopting Gaffer into their production pipeline.
 
