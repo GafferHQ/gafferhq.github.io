@@ -17,3 +17,7 @@ If docker is unavailable to you, you can use ruby directly instead. `cd` to the 
 ```bash
 bundle exec jekyll serve
 ```
+
+## Validation Process ##
+
+We use Travis CI to automatically validate the site's pages and build on PRs and merges. For more details, and information on validating locally, see [Validating Site Builds](VALIDATING.md). 
