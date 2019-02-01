@@ -6,5 +6,5 @@ google_analytics: UA-125947352-1
 gems:
    - jekyll-paginate
 
-latestGafferVersion: 0.50.0.0
+latestGafferVersion: 0.53.0.0
 copyrightYear: 2019
