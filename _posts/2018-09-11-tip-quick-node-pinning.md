@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Quick Node Pinning"
-subtitle: "Tip of the Day"
 icon: /resources/images/tip-quick-node-pinning-lead.jpg
+category: tips
+tags: [nodes]
 ---
 
 Typically, you pin a node to an editor by selecting it in the _Graph Editor_ and then clicking ![the pin button](/resources/images/gafferUI/targetNodesUnlocked.png) in another editor. However, if you're in a hurry, there's a faster way, which we'll show you today.

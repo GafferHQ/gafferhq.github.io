@@ -2,6 +2,8 @@
 layout: post
 title: "Reading Alembic files and rendering through Arnold"
 subtitle: "Demo"
+category: tips
+tags: [pipeline, rendering, arnold]
 ---
 
 <div class="embed-responsive embed-responsive-16by9 mb-15">

@@ -2,6 +2,8 @@
 layout: post
 title: "Interactive lookdev with Appleseed inside Gaffer"
 subtitle: "Demo"
+category: tips
+tags: [renering, appleseed]
 ---
 
 <div class="embed-responsive embed-responsive-16by9 mb-15">

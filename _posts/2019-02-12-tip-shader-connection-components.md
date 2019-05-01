@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Shader Connection Components"
-subtitle: "Tip of the Day"
 icon: /resources/images/2019-02-12-tip-shader-connection-components/splash-shader-connection-components.png
+category: tips
+tags: [nodes]
 ---
 
 When building shader networks, you can split a multi-value parameter in the ''Graph Editor'', to mix and match its individual components. 

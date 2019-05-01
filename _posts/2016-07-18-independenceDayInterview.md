@@ -3,6 +3,8 @@ layout: post
 title: "Gaffer at the movies"
 subtitle: "Independence Day: Resurgence"
 icon: "http://image-engine.com/wp-content/uploads/2016/07/IDRAliens.jpg"
+category: news
+tags: [feature]
 ---
 
 [FXGuide](http://www.fxguide.com) has a detailed breakdown of Independence Day: Resurgence, including Image Engine's key contributions: the aliens, interior mothership environment, and holding prison.

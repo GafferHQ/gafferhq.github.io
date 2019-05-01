@@ -3,6 +3,8 @@ layout: post
 title: "15th Annual VES Awards"
 subtitle: "Congrats to the Nominees!"
 icon: "https://www.visualeffectssociety.com/sites/all/themes/ves7/css/images/nav/head-logo.png"
+category: news
+tags: [feature]
 ---
 
 We're thrilled to learn that Gaffer was a key lighting and rendering software for a VES nominated project! CG Supervisor Edmond Engelbrecht and the Image Engine team were nominated for Outstanding Created Environment in an Episode, Commercial, or Real-Time Project for their work on Game of Thrones; The Winds of Winter, with the procedural texturing, look development, and rendering for the Citadel environment produced using Gaffer.

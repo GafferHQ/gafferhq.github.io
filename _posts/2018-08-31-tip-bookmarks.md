@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Bookmarked Nodes"
-subtitle: "Tip of the Day"
 icon: /resources/images/tip-bookmarking-nodes-lead.jpg
+category: tips
+tags: [nodes]
 ---
 
 Gaffer has a very useful node bookmarking feature, which can make working with large and complex graphs much easier. Today, we'll show you how to use it.

@@ -3,6 +3,8 @@ layout: post
 title: "Siggraph and DigiPro"
 subtitle: "Gaffer gets published"
 icon: "https://www.fxguide.com/wp-content/uploads/2016/07/digipto-18-660x440.jpg"
+category: news
+tags: [feature]
 ---
 
 The buzz surrounding Gaffer was pretty solid at Siggraph this year, thanks in part to our [Gaffer paper](http://dl.acm.org/authorize?N19757), published and presented at [DigiPro](http://dp2016.digiproconf.org/). If you're unfamiliar with DigiPro, its a co-located symposium that takes place the day before Siggraph. The presentations focus on production proven technology, providing a space for long-form papers about actual production challenges (rather than pure research). Image Engine has presented at DigiPro in the past, about our Cortex based rendering pipeline, but this was the first paper about Gaffer itself.

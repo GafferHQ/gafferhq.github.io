@@ -2,6 +2,8 @@
 layout: post
 title: "Shader Authoring in Maya"
 subtitle: "Demo"
+category: tips
+tags: [renering, maya]
 ---
 
 <div class="embed-responsive embed-responsive-16by9 mb-15">

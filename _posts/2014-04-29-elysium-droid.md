@@ -2,6 +2,8 @@
 layout: post
 title: "Exploring and rendering the exploding Droid from Elysium"
 subtitle: "Demo"
+category: news
+tags: [feature]
 ---
 
 <div class="embed-responsive embed-responsive-16by9 mb-15">

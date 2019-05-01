@@ -3,6 +3,8 @@ layout: post
 title: "Birds of a Feather Presentation"
 subtitle: "SIGGRAPH 2018"
 icon: /resources/images/SIGGRAPH2018_Logo_Small.jpg
+category: news
+tags: [talks, roadmap]
 ---
 
 The Gaffer team are proud to present their Birds of a Feather presentation from this year's SIGGRAPH 2018!

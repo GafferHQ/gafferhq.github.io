@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+{% if page.archive_category %}
+    {% assign type = 'category-' %}
+    {% assign id = page.archive_category %}
+    {% assign source = site.categories[ page.archive_category ] %}
+{% elsif page.archive_tag %}
+    {% assign type = 'tag-' %}
+    {% assign id = page.archive_tag %}
+    {% assign source = site.categories[ page.archive_category ] %}
+    {% assign source = site.tags[ page.archive_tag ] %}
+{% else %}
+    {% assign id = "posts" %}
+    {% assign source = site.posts %}
+{% endif %}
+
+{% include intro.html title=page.title image="https://image-engine.com/wp-content/uploads/2017/07/build_logan_lookDev_v236_0173.jpg" %}
+
+{{ content }}
+
+<section class="archive" id="{{ type }}{{ id }}">
+
+    <div class="row">
+
+        <div class="col-sm-8 col-sm-offset-1 blog-post-list">
+
+        {% for post in source %}
+            {% include postExcerpt.html post=post %}
+        {% endfor %}
+
+        </div>
+
+        <div class="col-sm-3 side-bar">
+
+            <div class="tags-and-categories">
+
+                <h3>Categories</h3>
+                <ul class="fa-ul">
+                    {% for category in site.categories %}
+                    <li>
+                        <span class="fa-li"><i class="fa fa-folder"></i></span>
+                        {% if category[0] == id %}
+                        {{ category[0] }} ({{ category[1] | size }})
+                        {% else %}
+                        <a href="/category/{{ category[0] }}">{{ category[0] }} ({{ category[1] | size }})</a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <h3>Tags</h3>
+                <ul class="fa-ul">
+                    {% for tag in site.tags %}
+                    <li>
+                        <span class="fa-li"><i class="fa fa-tag"></i></span>
+                        {% if tag[0] == id %}
+                        {{ tag[0] }} ({{ tag[1] | size }})
+                        {% else %}
+                        <a href="/tag/{{ tag[0] }}">{{ tag[0] }} ({{ tag[1] | size }})</a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

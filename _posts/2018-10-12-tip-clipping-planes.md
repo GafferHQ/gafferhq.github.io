@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Clipping Planes"
-subtitle: "Tip of the Day"
 icon: /resources/images/tip-clipping-planes-icon.png
+category: tips
+tags: [viewer]
 ---
 
 Like other DDCs, Gaffer uses clipping planes in its viewport (the _Viewer_) for selective rendering. The clipping planes can be set to confine the current view to a selection of scene locations.

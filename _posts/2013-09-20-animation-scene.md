@@ -2,6 +2,8 @@
 layout: post
 title: "Sample production cache"
 subtitle: "Demo"
+category: tips
+tags: [pipeline]
 ---
 
 <div class="embed-responsive embed-responsive-16by9 mb-15">

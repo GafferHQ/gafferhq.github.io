@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Attribute History"
-subtitle: "Tip of the Day"
 icon: /resources/images/tip-attribute-history-icon.png
+category: tips
+tags: [nodes, scene]
 ---
 
 Today's tip will be a bit longer than usual. We'll be taking a dive into a very powerful built-in feature of Gaffer: the attribute history.

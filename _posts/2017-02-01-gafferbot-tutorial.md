@@ -2,6 +2,8 @@
 layout: post
 title: "Introduction to Gaffer – GafferBot Lighting and LookDev"
 subtitle: "Demo"
+category: tips
+tags: [lighting, lookdev, rendering]
 ---
 
 <div class="embed-responsive embed-responsive-16by9 mb-15">

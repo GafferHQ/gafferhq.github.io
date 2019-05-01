@@ -2,6 +2,8 @@
 layout: post
 title: "Hosting Gaffer in Maya as a lighting tool"
 subtitle: "Demo"
+category: tips
+tags: [renering, maya]
 ---
 
 <div class="embed-responsive embed-responsive-16by9 mb-15">

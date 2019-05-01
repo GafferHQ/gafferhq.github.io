@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Release: Gaffer 0.53.1.0"
-subtitle: "Releases"
 icon: /resources/images/2019-02-14-announce-gaffer-53/gaffer-53-splash.png
+category: news
+tags: [release]
 ---
 
 <!-- Add an image path macro for implicit page-based file paths -->

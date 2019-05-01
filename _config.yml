@@ -3,7 +3,7 @@ permalink: /news/:title/
 baseurl:
 future: false
 google_analytics: UA-125947352-1
-gems:
+plugins:
    - jekyll-paginate
 
 latestGafferVersion: 0.53.4.0
@@ -11,3 +11,26 @@ copyrightYear: 2019
 images: "/resources/images"
 demos: "/resources/demos"
 docs: "/documentation"
+
+collections:
+  post_categories:
+    output: true
+    permalink: /category/:name
+  post_tags:
+    output: true
+    permalink: /tag/:name
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post_categories"
+    values:
+      layout: archive
+  -
+    scope:
+      path: ""
+      type: "post_tags"
+    values:
+      layout: archive
+

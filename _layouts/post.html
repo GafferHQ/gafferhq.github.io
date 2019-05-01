@@ -1,14 +1,41 @@
-{% include header.html %}
+---
+layout: default
+---
 
-{% include intro.html title="News" image="https://image-engine.com/wp-content/uploads/2017/07/build_logan_lookDev_v236_0173.jpg" %} <!-- Logan hero lookdev-->
+{% include intro.html title="News & Tips" image="https://image-engine.com/wp-content/uploads/2017/07/build_logan_lookDev_v236_0173.jpg" %} <!-- Logan hero lookdev-->
+
+<section class="post" >
 
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+
+        <div class="col-sm-8 col-sm-offset-1">
+
             <header class="page-header">
+
                 <h2>{{ page.title }}</h2>
+
+                {% if page.subtitle %}
                 <h4 class="gray">{{ page.subtitle }}</h4>
+                {% endif %}
+
                 <i class="fa fa-calendar"></i> <small class="dark">{{ page.date | date: "%B %-d, %Y" }}</small>
+
+                <div class="tags-and-categories">
+                    <small class="categories">
+                        <i class="fa fa-folder"></i>
+                        <ul class="inline-text-list">
+                            {% for category in page.categories %}<li><a href="/category/{{ category }}">{{ category }}</a></li> {% endfor %}
+                        </ul>
+                    </small>
+                    <small class="tags">
+                        <i class="fa fa-tag"></i>
+                        <ul class="inline-text-list">
+                            {% for tag in page.tags %}<li><a href="/tag/{{ tag }}">{{ tag }}</a></li> {% endfor %}
+                        </ul>
+                    </small>
+                </div>
+
             </header>
 
             {{ content }}
@@ -29,7 +56,38 @@
 
             </div>
         </div>
+
+
+        <div class="col-sm-3 side-bar">
+
+            <div class="related-posts" >
+
+                <h3>Related Posts</h3>
+
+                <ul class="fa-ul">
+                    {% for tag in page.tags %}
+                    <li>
+                    <span class="fa-li"><i class="fa fa-tag"></i></span>
+                    <h5>{{ tag }}</h5>
+                        <ul class="fa-ul">
+                            {% for post in site.tags[ tag ] %}
+                            {% unless post.title == page.title %}
+                            <li>
+                                <span class="fa-li"><i class="fa fa-bookmark"></i></span>
+                                <a href="{{ post.url }}">{{ post.title }}</a>
+                            </li>
+                            {% endunless %}
+                            {% endfor %}
+                        </ul>
+                     </li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+
+        </div>
+
     </div>
 </div>
 
-{% include footer.html %}
+

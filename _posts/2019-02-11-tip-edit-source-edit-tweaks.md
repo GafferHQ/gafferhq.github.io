@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Edit Source & Edit Tweaks"
-subtitle: "Tip of the Day"
 icon: /resources/images/2019-02-11-tip-edit-source-edit-tweaks/splash-edit-source-edit-tweaks.png
+category: tips
+tags: [nodes, viewer]
 ---
 
 When browsing a scene, it can be tricky to find and edit the node that generated or tweaked an object, especially if your graph is large, has many Box nodes, or depends on upstream components.

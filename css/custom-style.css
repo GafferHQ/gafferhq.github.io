@@ -125,3 +125,79 @@ figure {
 footer.footer {
     background-color: #323232;
 }
+
+.inline-text-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.inline-text-list li {
+    display: inline;
+}
+
+.inline-text-list li::after {
+    content: ", ";
+}
+
+.inline-text-list li:last-of-type::after {
+    content: none;
+}
+
+.tags-and-categories li {
+    word-break: keep-all;
+}
+
+.page-header .tags-and-categories .categories,
+.page-header .tags-and-categories .tags {
+    display: block;
+}
+
+.page-header .tags-and-categories {
+    margin-top: 0.3em;
+}
+
+
+.side-bar h3 {
+    font-size: 16px;
+}
+
+.side-bar li {
+    font-size: 12px;
+}
+
+.archive .blog-post-list {
+    margin-top: 2em;
+}
+
+.blog-post .post-header h5 {
+    margin: 5px 0px;
+}
+
+.blog-post .post-header .tags-and-categories {
+    margin-bottom: 15px;
+}
+
+.blog-post .post-header .tags-and-categories ul {
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+
+.side-bar {
+    padding-top: 2em;
+}
+
+.side-bar .tags-and-categories li {
+    text-transform: capitalize;
+    margin-bottom: 0.4em;
+}
+
+.side-bar .related-posts li {
+    margin-bottom: 0.75em;
+}
+
+
+.side-bar .related-posts h5 {
+    text-transform: capitalize;
+}

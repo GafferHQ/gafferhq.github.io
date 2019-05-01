@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Connect to Next"
-subtitle: "Tip of the Day"
 icon: /resources/images/2019-02-13-tip-connect-to-next/splash-connect-to-next.png
+category: tips
+tags: [nodes]
 ---
 
 <!-- Add an image path macro for implicit page-based file paths -->

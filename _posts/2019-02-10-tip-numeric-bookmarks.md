@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "Numeric Bookmarks"
-subtitle: "Tip of the Day"
 icon: /resources/images/2019-02-10-tip-numeric-bookmarks/splash-numeric-bookmark.png
+category: tips
+tags: [nodes]
+category: tips
+tags: [nodes]
 ---
 
 A **numeric bookmark** is a node bookmark associated with a number key (<kbd>1</kbd> through <kbd>9</kbd>) on the keyboard.

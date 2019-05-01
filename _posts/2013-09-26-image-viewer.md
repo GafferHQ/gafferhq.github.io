@@ -2,6 +2,8 @@
 layout: post
 title: "Working with the image viewer"
 subtitle: "Demo"
+category: tips
+tags: [compositing]
 ---
 
 <div class="embed-responsive embed-responsive-16by9 mb-15">

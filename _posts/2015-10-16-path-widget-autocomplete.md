@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Use autocomplete in path widgets"
-subtitle: "Tip of the Day"
 icon: /img/pathWidget/tabCompleteAnimation.gif
+category: tips
+tags: [ui]
 ---
 
 If you've spent much time in a UNIX shell, you probably already know and love tab completion, whereby hitting the tab key will autocomplete the current filename based on the first few characters entered. It's particularly handy for navigating the kind of deep directory structures that seem to typify VFX job structures. It's worth knowing that Gaffer's path widgets support the same tab complete mechanism - just **type part of the name, hit tab and if possible it'll be completed for you**. Here's an example.

@@ -3,6 +3,8 @@ layout: post
 title: "Gaffer at the movies"
 subtitle: "Jurassic World"
 icon: "https://cg1.cgsociety.org/uploads/news_images/original/69dd85bf1528441294.4291124.jpg"
+category: news
+tags: [feature]
 ---
 
 [CGSociety](http://www.cgsociety.org) has a great interview with Martyn Culpitt, VFX supervisor at Image Engine, talking about Image Engine's work on Jurassic World.

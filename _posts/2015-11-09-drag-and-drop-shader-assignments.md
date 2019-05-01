@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Drag and drop objects to assign shaders"
-subtitle: "Tip of the Day"
 icon: "/img/dragAndDropShaderAssignments/assignAnimation.gif"
+category: tips
+tags: [nodes, viewer]
 ---
 
 Because Gaffer is a procedural system, modifications to objects are made by applying nodes to the scene, using filters to determine which objects within the scene are affected by a particular node. Commonly a PathFilter is used to select all the objects whose names match a particular pattern, similar to the way pattern matching is performed in a Unix shell. For example, `/world/octopi/*/*Eye` would select all the eyes of any cephalopods that might be lurking in the scene.

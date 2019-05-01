@@ -18,6 +18,18 @@ If docker is unavailable to you, you can use ruby directly instead. `cd` to the 
 bundle exec jekyll serve
 ```
 
+## Categories and Tags ##
+
+When authoring posts, the `category` and `tags` [FrontMatter](https://jekyllrb.com/docs/posts/#categories-and-tags) can be used. Categories are used to differentiate between 'news' and 'tips'. Only ever use a singular `category` (not `categories`). Tags can be used to create sub-groups of content under any particular category. Posts will be linked to/from relevant archive pages.
+
+### Build note ###
+
+Because of the GitHub Page's [plugin whitelist](https://help.github.com/en/articles/configuring-jekyll-plugins), we sadly can't use something like [jekyll-archives](https://github.com/jekyll/jekyll-archives). As such, we have to roll our own. We also can't run any build steps on commit. So, if you author a new post and add a new `tag` or `category` that hasn't been used before, you need to run `buildPostArchives.py`. This will rebuild the stub pages in the `_post_categories` and `_post_tags` directories. 
+
+*NOTE: Never edit the contents of these directories manually, they will be overwritten by the script when next run.*.
+
+The contents of `_post_categories` and `_post_tags` _must_ be committed along with the post to prevent `404` errors when linking to the archive pages.
+
 ## Validation Process ##
 
 We use Travis CI to automatically validate the site's pages and build on PRs and merges. For more details, and information on validating locally, see [Validating Site Builds](VALIDATING.md). 

@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Plug-to-Plug Driving"
-subtitle: "Tip of the Day"
 icon: /resources/images/tip-plug-to-plug-driving-lead.jpg
+category: tips
+tags: [nodes]
 ---
 
 Sometimes, you want one plug's value to determine another plug's value. You could accomplish this with an Expression node and some Python, but today we'll show you a far easier method: create an auxiliary connection between them by dragging and dropping one plug onto another.

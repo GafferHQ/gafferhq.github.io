@@ -3,6 +3,8 @@ layout: post
 title: "Getting Lost in Space"
 subtitle: "Gaffer on TV"
 icon: http://image-engine.com/wp-content/uploads/2017/06/featuredimage.jpg
+category: news
+tags: [feature]
 ---
 
 This month, [FXGuide](https://fxguide.com) featured the look of the robot from Lost in Space, Netflix's modern reimagining of the famous TV series from the 1960s.
