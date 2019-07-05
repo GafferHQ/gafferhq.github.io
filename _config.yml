@@ -10,4 +10,4 @@ latestGafferVersion: 0.53.4.0
 copyrightYear: 2019
 images: "/resources/images"
 demos: "/resources/demos"
-docs: "/documentation"
+docs: "https://www.gafferhq.org/documentation"
