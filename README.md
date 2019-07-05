@@ -12,12 +12,6 @@ docker run -t --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-page
 
 You can then view the site by navigating to http://0.0.0.0:4000 in your web browser. Changes made to the site will be automatically picked up by the server and visible upon a refresh in the browser.
 
-If docker is unavailable to you, you can use ruby directly instead. `cd` to the root of your build, and run:
-
-```bash
-bundle exec jekyll serve
-```
-
 ## Validation Process ##
 
 We use Travis CI to automatically validate the site's pages and build on PRs and merges. For more details, and information on validating locally, see [Validating Site Builds](VALIDATING.md). 
