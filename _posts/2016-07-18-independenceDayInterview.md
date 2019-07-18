@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Gaffer at the movies"
-subtitle: "Independence Day: Resurgence"
-icon: "http://image-engine.com/wp-content/uploads/2016/07/IDRAliens.jpg"
+title: "Interview: Independenence Day Resurgence"
+banner: https://image-engine.com/wp-content/uploads/2016/07/IDRAliens.jpg
+tags: [feature]
 ---
 
-[FXGuide](http://www.fxguide.com) has a detailed breakdown of Independence Day: Resurgence, including Image Engine's key contributions: the aliens, interior mothership environment, and holding prison.
-
-![They're Back!]({{ page.icon }})
+[FXGuide](https://www.fxguide.com) has a detailed breakdown of Independence Day: Resurgence, including Image Engine's key contributions: the aliens, interior mothership environment, and holding prison.
 
 Hear from VFX Supervisor Martyn Culpitt and Look Development Lead Mathias Lautour about how Gaffer contributed to the process:
 

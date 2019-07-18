@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Bookmarked Nodes"
-subtitle: "Tip of the Day"
-icon: /resources/images/tip-bookmarking-nodes-lead.jpg
+title: Bookmarked nodes
+author: Michael DuBelko
+images: /content/images/2018-08-31-tip-bookmarks
+banner: tip-bookmarking-nodes-lead.jpg
+tags: [tip, ui]
 ---
 
 Gaffer has a very useful node bookmarking feature, which can make working with large and complex graphs much easier. Today, we'll show you how to use it.
 
-<img class="mtb-30" src="/resources/images/tip-bookmarking-nodes-lead.jpg" alt="A bookmarked node">
-
 When a node is bookmarked, it becomes accessible from anywhere in the _Graph Editor_ (with one exception). This allows you to quickly connect to a bookmarked node from other nodes, even when not currently in frame in the Graph Editor.
 
-<img class="mtb-30" src="/resources/images/tip-bookmarking-nodes.gif" alt="Demo of connecting to bookmarked nodes.">
+![Demo of connecting to a bookmarked node]({{ page.images }}/tip-bookmarking-nodes.gif)
 
 To bookmark a node:
 

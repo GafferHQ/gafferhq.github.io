@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Release: Gaffer 0.53.1.0"
-subtitle: "Releases"
-icon: /resources/images/2019-02-14-announce-gaffer-53/gaffer-53-splash.png
+author: Michael DuBelko
+images: /content/images/2019-02-14-announce-gaffer-53
+banner: gaffer-53-splash.png
+tags: [release]
 ---
 
-<!-- Add an image path macro for implicit page-based file paths -->
-{% assign post-directory = page.path | remove: '_posts/' | remove: '.md' %}
-{% assign images = site.images | append: "/" | append: post-directory %}
+Recently, we reached a development milestone: **Gaffer 0.53.1.0**. This is a huge update, filled with nifty new features and nodes. You will find some of them very useful in your day-to-day Gaffer use.
 
 <style type="text/css">
     span.changelog {
@@ -42,10 +42,6 @@ icon: /resources/images/2019-02-14-announce-gaffer-53/gaffer-53-splash.png
     }
 </style>
 
-<img class="mb-30 show" style="margin: auto" src="{{ images }}/gaffer-53-splash.png" alt="Gaffer 0.53.1.0 release splash">
-
-Recently, we reached a development milestone: **Gaffer 0.53.1.0**. This is a huge update, filled with nifty new features and nodes. You will find some of them very useful in your day-to-day Gaffer use.
-
 However, we have replaced some of the core nodes, leading to several breaking changes. We've summarized the relevant differences for you below (for the dry details, you can view the full changelogs [here](https://github.com/GafferHQ/gaffer/releases/tag/0.53.0.0) and [here](https://github.com/GafferHQ/gaffer/releases/tag/0.53.1.0)).
 
 <!-- Interface Updates -->
@@ -53,11 +49,11 @@ However, we have replaced some of the core nodes, leading to several breaking ch
 ### Interface updates ###
 We've made a fair number of interface improvements based on user feedback:
 
-- <span class="changelog changelog-new">New</span> [Numeric bookmarks]({% post_url 2019-02-10-tip-numeric-bookmarks %}): ![Numeric bookmark on a node]({{ images }}/gaffer-53-numeric-bookmark.png)
+- <span class="changelog changelog-new">New</span> [Numeric bookmarks]({% post_url 2019-02-10-tip-numeric-bookmarks %}): ![Numeric bookmark on a node]({{ page.images }}/gaffer-53-numeric-bookmark.png)
     - Navigate to nodes and pin them to editors using the number keys!
-- <span class="changelog changelog-new">New</span> [Edit Source and Edit Tweaks]({% post_url 2019-02-11-tip-edit-source-edit-tweaks %}): ![Edit Source and Edit Tweaks menu actions]({{ images }}/gaffer-53-edit-source-edit-tweaks.png)
-- <span class="changelog changelog-new">New</span>  [Edit color connection components]({% post_url 2019-02-12-tip-shader-connection-components %}) in shader networks: ![Node with a split colour connection]({{ images }}/gaffer-53-color-components.png)
-- <span class="changelog changelog-new">New</span> [Connect to Next]({% post_url 2019-02-13-tip-connect-to-next %}) on Loop nodes: ![Connect to Next menu action]({{ images }}/gaffer-53-connect-to-next.png)
+- <span class="changelog changelog-new">New</span> [Edit Source and Edit Tweaks]({% post_url 2019-02-11-tip-edit-source-edit-tweaks %}): ![Edit Source and Edit Tweaks menu actions]({{ page.images }}/gaffer-53-edit-source-edit-tweaks.png)
+- <span class="changelog changelog-new">New</span> [Edit color connection components]({% post_url 2019-02-12-tip-shader-connection-components %}) in shader networks: ![Node with a split colour connection]({{ page.images }}/gaffer-53-color-components.png)
+- <span class="changelog changelog-new">New</span> [Connect to Next]({% post_url 2019-02-13-tip-connect-to-next %}) on Loop nodes: ![Connect to Next menu action]({{ page.images }}/gaffer-53-connect-to-next.png)
 - <span class="changelog changelog-updated">Updated</span> Bookmarks menu shortcut is now <kbd>B</kbd> (was <kbd>Ctrl</kbd> + <kbd>B</kbd>).
 
 <!-- Node Updates -->
@@ -65,24 +61,24 @@ We've made a fair number of interface improvements based on user feedback:
 ### Node updates ###
 Many nodes have had breaking changes or have been replaced. You can open existing scripts that have the old versions of the nodes, but they will be update on load. **If you save a script with any of these new nodes in Gaffer 53, they will only work with Gaffer 53** &ndash; there's no going back.
 
-- <span class="changelog changelog-new">New</span> ![ShaderTweaks node]({{ images }}/gaffer-53-shadertweaks-node.png)
+- <span class="changelog changelog-new">New</span> ![ShaderTweaks node]({{ page.images }}/gaffer-53-shadertweaks-node.png)
     - A node for tweaking shaders and lights.
     - This node is still in development. Feel free to give us your feedback on its interface!
-    - [Demo]({{ site.demos }}/gaffer-53-shadertweaks-node-public.gfr)
-- <span class="changelog changelog-new">New</span> ![Loop node]({{ images }}/gaffer-53-loop-node.png)
+    - [Example]({{ site.examples }}/gaffer-53-shadertweaks-node-public.gfr)
+- <span class="changelog changelog-new">New</span> ![Loop node]({{ page.images }}/gaffer-53-loop-node.png)
     - Replaces: SceneLoop and ImageLoop nodes.
-    - [Demo]({{ site.demos }}/gaffer-53-loop-node-public.gfr)
-- <span class="changelog changelog-new">New</span> ![TimeWarp node]({{ images }}/gaffer-53-timewarp-node.png)
+    - [Example]({{ site.examples }}/gaffer-53-loop-node-public.gfr)
+- <span class="changelog changelog-new">New</span> ![TimeWarp node]({{ page.images }}/gaffer-53-timewarp-node.png)
     - Replaces: SceneTimeWarp and ImageTimeWarp nodes.
-    - [Demo]({{ site.demos }}/gaffer-53-timewarp-node-public.gfr)
-- <span class="changelog changelog-new">New</span> ![ContextVariables node]({{ images }}/gaffer-53-contextvariables-node.png)
+    - [Example]({{ site.examples }}/gaffer-53-timewarp-node-public.gfr)
+- <span class="changelog changelog-new">New</span> ![ContextVariables node]({{ page.images }}/gaffer-53-contextvariables-node.png)
     - Replaces: SceneContextVariables, ImageContextVariables, DeleteSceneContextVariables, and DeleteImageContextVariables nodes.
-    - [Demo]({{ site.demos }}/gaffer-53-contextvariables-node-public.gfr)
-- <span class="changelog changelog-new">New</span> ![ArnoldTextureBake node]({{ images }}/gaffer-53-arnoldtexturebake-node.png)
+    - [Example]({{ site.examples }}/gaffer-53-contextvariables-node-public.gfr)
+- <span class="changelog changelog-new">New</span> ![ArnoldTextureBake node]({{ page.images }}/gaffer-53-arnoldtexturebake-node.png)
     - For baking Arnold shaders on meshes into textures.
-    - [Demo]({{ site.demos }}/gaffer-53-arnoldtexturebake-node-public.gfr)
-- <span class="changelog changelog-updated">Updated</span> ![Box node]({{ images }}/gaffer-53-box-node.png)
-    - [Boxes can now be disabled]({{ site.docs }}/0.53.4.0/WorkingWithTheNodeGraph/Box/index.html#setting-up-a-box-for-pass-through) (<kbd>D</kbd>) when their new `passThrough` plug is connected.
+    - [Example]({{ site.examples }}/gaffer-53-arnoldtexturebake-node-public.gfr)
+- <span class="changelog changelog-updated">Updated</span> ![Box node]({{ page.images }}/gaffer-53-box-node.png)
+    - [Boxes can now be disabled]({{ site.docs }}/{{ site.latestGafferVersion }}/WorkingWithTheNodeGraph/Box/index.html#setting-up-a-box-for-pass-through) (<kbd>D</kbd>) when their new `passThrough` plug is connected.
 
 <!-- Breaking Changes -->
 

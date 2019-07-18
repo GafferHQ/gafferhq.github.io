@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Birds of a Feather Presentation"
-subtitle: "SIGGRAPH 2018"
-icon: /resources/images/SIGGRAPH2018_Logo_Small.jpg
+title: "SIGGRAPH 2018: Birds of a Feather presentation"
+author: Michael DuBelko
+images: /content/images/2018-10-10-siggraph-2018-presentation/
+banner: SIGGRAPH2018_Logo_Small.jpg
+tags: [talks]
 ---
 
 The Gaffer team are proud to present their Birds of a Feather presentation from this year's SIGGRAPH 2018!
 
-<div class="embed-responsive embed-responsive-16by9 mb-15">
-    <iframe class="embed-responsive-item" src="//player.vimeo.com/video/291543603" width="1150" height="500" frameborder="0" scrolling="no" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
+{% include vimeo.html media='https://player.vimeo.com/video/291543603' %}
 
 A big thanks to John, Andrew, Don, Daniel, and Murray for bringing everyone up to speed on Gaffer's history, the most recent developments, and its future, as well as demonstrating some of Image Engine's customizations of the project.
 

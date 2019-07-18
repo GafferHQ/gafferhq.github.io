@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "Plug-to-Plug Driving"
-subtitle: "Tip of the Day"
-icon: /resources/images/tip-plug-to-plug-driving-lead.jpg
+title: Plug-to-plug driving
+author: Michael DuBelko
+images: /content/images/2018-09-10-tip-plug-to-plug-driving/
+banner: tip-plug-to-plug-driving-lead.jpg
+tags: [tip, ui]
 ---
 
 Sometimes, you want one plug's value to determine another plug's value. You could accomplish this with an Expression node and some Python, but today we'll show you a far easier method: create an auxiliary connection between them by dragging and dropping one plug onto another.
 
-<img class="mtb-30" src="/resources/images/tip-plug-to-plug-driving.gif" alt="Demo of driving a plug with another plug.">
+![Demo of driving a plug with another plug]({{ page.images }}/tip-plug-to-plug-driving.gif)
 
 In most cases, the plugs must be of the same type: string, bool, float, V3i, V3f, etc. The exception is integer plugs, which can drive and be driven by floats and bools (the value will be converted automatically). As you would expect, the same two plugs cannot drive each other.
 

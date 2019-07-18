@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Gaffer Goes International"
-subtitle: "Gaffer at the Movies"
-icon: https://image-engine.com/wp-content/uploads/2017/01/FFF-26C.jpg
+title: Gaffer goes international
+author: Michael DuBelko
+banner: https://image-engine.com/wp-content/uploads/2017/01/FFF-26C.jpg
+tags: [feature]
 ---
 
 This month, [CGWorld](https://cgworld.jp) has provided a write-up of Image Engine's contributions to the Japanese-produced CG film Kingsglaive: Final Fantasy XV. Gaffer greatly aided the lighting department and daily automation during production of their 23-minute sequence for the film.
 
-<!--more-->
-
-<div class="embed-responsive embed-responsive-16by9 mtb-30">
-    <iframe class="embed-responsive-item" src="//player.vimeo.com/video/201722997" width="1150" height="500" frameborder="0" scrolling="no" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
+{% include vimeo.html media='https://player.vimeo.com/video/201722997' %}
 
 Yuta Shimizu, one of the CG Supervisors overseeing the show, commented on Gaffer's crucial role in the process:
 

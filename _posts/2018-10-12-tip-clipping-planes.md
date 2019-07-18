@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "Clipping Planes"
-subtitle: "Tip of the Day"
-icon: /resources/images/tip-clipping-planes-icon.png
+title: Clipping planes
+author: Michael DuBelko
+images: /content/images/2018-10-12-tip-clipping-planes/
+banner: tip-clipping-planes-icon.png
+tags: [tip, camera]
 ---
 
-Like other DDCs, Gaffer uses clipping planes in its viewport (the _Viewer_) for selective rendering. The clipping planes can be set to confine the current view to a selection of scene locations.
+Like other DCCs, Gaffer uses clipping planes in its viewport (the _Viewer_) for selective rendering. The clipping planes can be set to confine the current view to a selection of scene locations.
 
-<img class="mtb-30" src="{{ site.baseurl }}/resources/images/tip-clipping-planesAnimation.gif" alt="Demonstration of the clipping planes">
+![Demonstration of the clipping planes]({{ page.images }}/tip-clipping-planesAnimation.gif)
 
 To set the clipping plane to enclose one or more locations:
 

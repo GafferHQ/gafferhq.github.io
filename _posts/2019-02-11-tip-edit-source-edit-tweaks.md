@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Edit Source & Edit Tweaks"
-subtitle: "Tip of the Day"
-icon: /resources/images/2019-02-11-tip-edit-source-edit-tweaks/splash-edit-source-edit-tweaks.png
+title: Edit Source & Edit Tweaks
+author: Michael DuBelko
+images: /content/images/2019-02-11-tip-edit-source-edit-tweaks/
+banner: splash-edit-source-edit-tweaks.png
+tags: [tip, ui]
 ---
 
 When browsing a scene, it can be tricky to find and edit the node that generated or tweaked an object, especially if your graph is large, has many Box nodes, or depends on upstream components.
-
-<!-- Add an image path macro for implicit page-based file paths -->
-{% assign post-directory = page.path | remove: '_posts/' | remove: '.md' %}
-{% assign images = site.images | append: "/" | append: post-directory %}
 
 To make finding and editing upstream nodes more convenient, the following quick actions are available:
 
@@ -18,7 +16,7 @@ To make finding and editing upstream nodes more convenient, the following quick 
 
 ### Edit Source ###
 
-![Edit Source in the Viewer and the Hierarchy View.]({{ images }}/edit-sourceAnimation.gif)
+![Edit Source in the Viewer and the Hierarchy View.]({{ page.images }}/edit-sourceAnimation.gif)
 
 To edit an object's source node:
 
@@ -35,7 +33,7 @@ In both methods, a _Node Editor_ window that is focused on the source node will 
 
 ### Edit Tweaks ###
 
-![Edit Tweaks in the Viewer and the Hierarchy View.]({{ images }}/edit-tweaksAnimation.gif)
+![Edit Tweaks in the Viewer and the Hierarchy View.]({{ page.images }}/edit-tweaksAnimation.gif)
 
 Edit Tweaks searches for upstream ShaderTweaks and CameraTweaks nodes. It cannot search downstream.
 

@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Drag and drop objects to assign shaders"
-subtitle: "Tip of the Day"
-icon: "/img/dragAndDropShaderAssignments/assignAnimation.gif"
+title: Drag and drop objects to assign shaders
+author: John Haddon
+images: /content/images/2015-11-09-drag-and-drop-shader-assignments/
+banner: assign.png
+tags: [tip, ui]
 ---
 
 Because Gaffer is a procedural system, modifications to objects are made by applying nodes to the scene, using filters to determine which objects within the scene are affected by a particular node. Commonly a PathFilter is used to select all the objects whose names match a particular pattern, similar to the way pattern matching is performed in a Unix shell. For example, `/world/octopi/*/*Eye` would select all the eyes of any cephalopods that might be lurking in the scene.
@@ -11,9 +13,9 @@ Although this pattern matching can be powerful, it does rather keep you at arm's
 
 That's why it can often be handier just to drag objects straight out of the viewer and onto a node to make an assignment all in a single gesture. In the example below, we already have three ShaderAssignment nodes but they don't currently apply to anything. When objects are dragged from the viewer and dropped onto the nodes, a PathFilter is created automatically and set up to apply to the object in question.
 
-![Shader Assignment Animation]({{ site.baseurl }}{{ page.icon }})
+![Shader assignment animation]({{ page.images }}/assignAnimation.gif)
 
-By default, the filter is set up to apply to _only_ the dropped objects, but **Shift-drag** and **Control-drag** can be used to add and remove from the current filter as well.
+By default, the filter is set up to apply to _only_ the dropped objects, but <kbd>Shift</kbd>-drag and <kbd>Ctrl</kbd>-drag can be used to add and remove from the current filter as well.
 
 Of course, this doesn't only work for ShaderAssignments - you can drop objects onto any node that supports the use of filters. In fact the use of drag and drop is common throughout Gaffer - here are few other spots you might find it handy :
 
