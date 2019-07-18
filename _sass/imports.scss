@@ -1,0 +1,16 @@
+/* Gaffer style variables */
+@import "gaff-variables";
+
+/* Bootstrap */
+@import "bootstrap-4.3.1/bootstrap";
+
+/* Gaffer style classes */
+@import "gaff-classes";
+@import "gaff-code-blocks";
+
+/* Sass fonts */
+/* Font-awesome directory path (relative to `assets/css`) */
+$fa-font-path: "../fonts/font-awesome-5.9.0";
+@import "font-awesome-5.9.0/fontawesome";
+@import "font-awesome-5.9.0/solid";
+@import "font-awesome-5.9.0/brands";
