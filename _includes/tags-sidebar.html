@@ -1,0 +1,14 @@
+<aside class="col-md-3 d-none d-md-block" id="tags">
+    <h1 class="h5 text-primary"><a href="/news/tags/"><i class="fas fa-tags"></i> Tags</a></h1>
+    {% capture tags %}
+        {% for tag in site.tags %}
+            {{ tag[0] }}
+        {% endfor %}
+    {% endcapture %}
+    {% assign sortedtags = tags | split:' ' | sort %}
+    <ul class="list-unstyled">
+        {% for tag in sortedtags %}
+            <li><a class="text-muted" href="/news/tags/#{{ tag }}">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
+</aside>

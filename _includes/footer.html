@@ -1,100 +1,26 @@
+<footer class="mt-5 pt-4 pb-2 bg-dark gaff-text-gray-400 small" id="footer">
+    <div class="container">
+        <div class="row text-center text-md-left">
+            <section class="col-12 col-md-6 mb-3 mb-md-0" id="sitemap">
+                <ul class="list-unstyled">
+                    <li class="mb-1"><a href="#top">Top</a></li>
+                    <li class="mb-1"><a href="/download">Home</a></li>
+                    <li class="mb-1"><a href="/download">Download</a></li>
+                    <li class="mb-1"><a href="/news">News</a></li>
+                    <li class="mb-1"><a href="https://gafferhq.org/documentation/{{ site.latest-release }}">Docs</a></li>
+                </ul>
+            </section>
+
+            <section class="col-12 col-md-6 order-md-first" id="about">
+                <p class="mb-1 text-uppercase font-weight-bold gaff-letter-spacing">Gaffer</p>
+                <p class="mb-1 h1">
+                    <a href="https://groups.google.com/forum/#!forum/gaffer-dev"><i class="fab fa-google-plus-square"></i></a>
+                    <a href="https://github.com/gafferHQ/gaffer"><i class="fab fa-github-square"></i></a>
+                    <a href="https://vimeo.com/cortex"><i class="fab fa-vimeo-square"></i></a>
+                </p>
+                <p class="mb-1">© 2011-<span class="copyright-year"></span><noscript>2019</noscript> Image Engine Design Inc. All rights reserved.</p>
+                <p class="mb-1">© 2011-<span class="copyright-year"></span><noscript>2019</noscript> John Haddon. All rights reserved.</p>
+            </section>
         </div>
-
-        <footer class="footer mt-60">
-            <section id="social-media" class="container pt-60">
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <ul class="social white">
-                            <li class="link mr-0" style="padding: 0 10px">
-                                <a class="white" href="https://groups.google.com/forum/#!forum/gaffer-dev"><i class="fa fa-google-plus-square" style="font-size: 36px"></i></a>
-                            </li>
-                            <li class="link mr-0" style="padding: 0 10px">
-                                <a class="white" href="https://github.com/gafferHQ/gaffer" style="font-size: 36px"><i class="fa fa-github-square"></i></a>
-                            </li>
-                            <li class="link mr-0" style="padding: 0 10px">
-                                <a class="white" href="https://vimeo.com/cortex" style="font-size: 36px"><i class="fa fa-vimeo-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="copyright" class="container copyright ptb-60">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p class="text-uppercase lead white"><a href="{{ site.baseurl }}" class="white">Gaffer</a></p>
-                        <p class="white">© {{ site.copyrightYear }} Image Engine Design Inc. All rights reserved.<br></p>
-                        <p class="white">© {{ site.copyrightYear }} John Haddon. All rights reserved.</p>
-                    </div>
-                </div>
-            </section>
-        </footer>
-
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src="{{ site.baseurl }}/js/plugin/jquery.easing.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/jquery-ui.min.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/jquery.flexslider.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/jquery.fitvids.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/wow.min.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/owl.carousel.min.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/sidebar-menu.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/plugin/mediaelement-and-player.min.js"></script>
-	<script src="{{ site.baseurl }}/js/theme.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/js/navigation.js" type="text/javascript"></script>
-
-	<script>
-
-	$( document ).ready(function() {
-
-		// find animated gifs and add nice features like click-to-play
-		//////////////////////////////////////////////////////////////
-
-		function toggleAnimation( image ) {
-
-			if( image.src.endsWith( ".png" ) )
-			{
-				image.src = image.src.replace( ".png", "Animation.gif" );
-				image.parentNode.setAttribute( "class", "" );
-			}
-			else
-			{
-				image.src = image.src.replace( "Animation.gif", ".png" );
-				image.parentNode.setAttribute( "class", "titleFrame" );
-			}
-
-		}
-
-		// it'd be nice to use an attribute to say which images
-		// get this treatment, but we use the filename instead,
-		// since we can't set arbitrary attributes using the
-		// markdown in our blog posts.
-
-		var animations = $( "img[src$='Animation.gif']" );
-
-		// wrap in a figure so we can add an overlay with the play icon.
-		// this is done via the css.
-
-		animations.wrap( "<figure></figure>" );
-
-		// turn off the animation to start with
-
-		animations.each( function() { toggleAnimation( this ); } );
-
-		// and arrange to turn it on when clicked
-
-		animations.on( "click", function() { toggleAnimation( this ); } );
-
-	});
-
- 	</script>
-
-	</body>
-</html>
-
+    </div>
+</footer>

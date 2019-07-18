@@ -1,0 +1,3 @@
+<li class="nav-item {% if page.url == include.link %}active{% endif %}">
+    <a class="nav-link" href="{{ include.link }}{% if include.link contains '/documentation/' %}{{ site.latest-release }}{% endif %}">{{ include.text }} {% if include.icon %}<span class="small"><i class="{{ include.icon }}"></i></span>{% endif %} {% if page.url == include.link %}<span class="sr-only">(current)</span>{% endif %}</a>
+</li>

@@ -1,0 +1,24 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg flex-shrink-0 navbar-dark bg-black">
+    <div class="container">
+        <!-- Logo and home -->
+        <a class="navbar-brand" style="height: 50px" href="/"><img class="d-block h-100" src="{{ site.images }}/brand/gaffer-logo-nav.svg" alt="Gaffer logo"></a>
+
+        <!-- Mobile hamburger -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation" aria-controls="main-navigation"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items -->
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav mr-auto">
+                {% include nav-link.html link='/download/' text='Download' %}
+                {% include nav-link.html link='/news/' text='News' %}
+                {% include nav-link.html link='https://gafferhq.org/documentation/' text='Docs' %}
+                {% include nav-link.html link='https://groups.google.com/forum/#!forum/gaffer-dev/' text='Community' icon='fa fa-external-link-alt' %}
+                {% include nav-link.html link='https://github.com/gafferhq/gaffer/' text='GitHub' icon='fa fa-external-link-alt' %}
+            </ul>
+        </div>
+    </div>
+</nav>
