@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% if page.title %}{{ page.title }} | {% endif %}Gaffer</title>
+        <link rel="stylesheet" href="/assets/styles/styles.css" type="text/css">
+        <!--[if lt IE 9]>
+        <script src="/assets/scripts/polyfills/html5shiv.min.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" type="image/png" href="{{ site.images }}/brand/gaffer-logo-mini.png" />
+        <link rel="icon" type="image/png" href="{{ site.images }}/brand/gaffer-logo-mini.png" />
+        <link rel="apple-touch-icon" type="image/png" href="{{ site.images }}/brand/gaffer-logo-mini.png" />
+    </head>
+    <body>
+        {% include nav.html %}
+        <main class="container-fluid px-0" id="main">
+            {{ content }}
+        </main>
+        {% include footer.html %}
+        <script src="/assets/scripts/jquery-3.4.1/jquery-3.4.1.slim.min.js"></script>
+        <script src="/assets/scripts/bootstrap-4.3.1/bootstrap.min.js"></script>
+        <script src="/assets/scripts/bootstrap-4.3.1/bootstrap.bundle.min.js"></script>
+        <script src="/assets/scripts/clipboard-2.0.4/clipboard.js"></script>
+        <script src="/assets/scripts/baguettebox-1.11.0/baguetteBox.min.js"></script>
+        <script src="/assets/scripts/scripts.js"></script>
+        <!-- Google Analytics -->
+        {% if site.google-analytics %}
+            {% include analytics.html %}
+        {% endif %}
+    </body>
+</html>
