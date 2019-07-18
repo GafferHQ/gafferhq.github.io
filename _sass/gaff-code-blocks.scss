@@ -1,0 +1,64 @@
+/*!
+ * From Bootstrap internal docs:
+ - https://github.com/twbs/bootstrap/blob/master/site/static/docs/4.3/assets/scss/_clipboard-js.scss
+ - https://github.com/twbs/bootstrap/blob/master/site/static/docs/4.3/assets/scss/_component-examples.scss
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+.highlight {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: $gray-100;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  @include media-breakpoint-up(sm) {
+    padding: 1.5rem;
+  }
+
+  pre {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code {
+    @include font-size(inherit);
+    color: $code-color;
+  }
+}
+
+.clipboard {
+  position: relative;
+  display: none;
+  float: right;
+
+  + .highlight {
+    margin-top: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+  
+.btn-clipboard {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  z-index: 10;
+  display: block;
+  padding: .25rem .5rem;
+  color: #818a91;
+  background-color: transparent;
+  border: 0;
+  @include border-radius;
+
+  &:hover {
+    @extend .text-primary;
+  }
+}

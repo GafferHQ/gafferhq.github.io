@@ -1,0 +1,16 @@
+/* Gaffer-specific variables */
+$gaff-color-red: #b92227;
+$gaff-color-dark: #212529;
+$gaff-color-black: black;
+
+/* Bootstrap overrides */
+$enable-responsive-font-sizes: true;
+$theme-colors: (
+  "primary": $gaff-color-red,
+  "dark": $gaff-color-dark,
+  "black": $gaff-color-black,
+);
+
+$code-color: #404040;
+$spacer: 2rem;
+

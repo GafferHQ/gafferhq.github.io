@@ -1,0 +1,129 @@
+/* Gaffer-specific CSS classes */
+
+/* Add permanent scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Body  */
+html {
+  height: 100%;
+}
+
+/* Safest method to make the footer stick to the bottom on small pages */
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main#main {
+  flex: 1;
+}
+
+/* Gray colors, based Bootstrap's default greys
+  Syntax: .gaff-text-grey-100
+*/
+@each $prop, $abbrev in (color: gaff-text) {
+  @each $size, $color in $grays {
+    .#{$abbrev}-gray-#{$size} {
+      #{$prop}: $color !important;
+    }
+  }
+}
+
+/* Give inline code the same barely-perceptible background as block
+code */
+code {
+  background-color: $gray-100;
+}
+
+/* Adjust button click focus color */
+button:focus {
+  outline-color: $input-btn-focus-color;
+}
+
+/* Styling for main article text, which should apply to markdown
+pages and blog posts */
+main#main, article#article {
+  &>h1,
+  &>.h1,
+  &>h2,
+  &>.h2,
+  &>h3,
+  &>.h3,
+  &>h4,
+  &>.h4 {
+    margin-top: 2rem;
+  }
+
+  &>table {
+    @extend .table;
+    @extend .table-bordered;
+    @extend .table-sm;
+  }
+
+  &>img,
+  &>p>img {
+    max-width: 100%;
+  }
+}
+
+/* Basic letterspacing */
+.gaff-letter-spacing {
+  letter-spacing: 0.125em;
+}
+
+/* Generic image */
+.gaff-img,
+.gaff-img-carousel {
+  display: block;
+  margin: auto;
+  width: 100%;
+  object-fit: contain;
+  background-color: black;
+}
+
+/* Footer */
+footer#footer {
+  margin-top: auto;
+
+  a {
+    @extend .gaff-text-gray-400;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary) !important;
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: var(--primary) !important;
+    }
+  }
+}
+
+/* Carousel image sizing in index.md */
+@include media-breakpoint-up(xs) {
+  .gaff-img-carousel {
+    height: 150px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .gaff-img-carousel {
+    height: 200px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .gaff-img-carousel {
+    height: 300px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .gaff-img-carousel {
+    height: 400px;
+  }
+}
