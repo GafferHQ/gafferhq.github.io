@@ -1,6 +1,6 @@
 # GafferHQ.org #
 
-This repository contains the website for http://gafferhq.org. It is published to the web via [GitHub Pages](https://pages.github.com/). Any changes pushed to the upstream master branch go live immediately.
+This repository contains the website for https://gafferhq.org. It is published to the web via [GitHub Pages](https://pages.github.com/). Any changes pushed to the upstream master branch go live immediately.
 
 ## Local Testing ##
 
