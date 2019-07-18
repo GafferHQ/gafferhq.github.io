@@ -1,13 +1,29 @@
-paginate: 1
-permalink: /news/:title/
+title: Gaffer
+description: >-
+  Gaffer is an open-source, node-based 3D and 2D processing and
+  automation tool for use in VFX. It supports the Alembic, USD, and SCC
+  scene formats, and all image formats supported by OpenImageIO,
+  including EXR. Its scenes are compatible with VDBs and the Arnold, 
+  Appleseed, and 3Delight renderers.
+encoding: utf-8
 baseurl:
-future: false
-google_analytics: UA-125947352-1
-gems:
-   - jekyll-paginate
+url: "https://gafferhq.org"
+permalink: /news/:title/ # Base URL for all posts
+paginate: 10 # How many posts to show on each news page
+paginate_path: "/news/archive:num/" # Base URL for post archives
 
-latestGafferVersion: 0.54.1.0
-copyrightYear: 2019
-images: "/resources/images"
-demos: "/resources/demos"
-docs: "https://www.gafferhq.org/documentation"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Site variables
+google-analytics: UA-125947352-1
+images: /content/images
+examples: /content/examples
+latest-release: 0.53.4.0
+arnold-version: 5.3
+delight-version: 1.1.12
+tractor-version: 2.2
+appleseed-version: 1.9.0
+
