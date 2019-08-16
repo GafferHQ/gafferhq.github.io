@@ -2,7 +2,7 @@
 layout: post
 title: "Release: Gaffer 0.54"
 subtitle: "Releases"
-icon: /resources/images/2019-08-13-announce-gaffer-54/gaffer-54-splash.png
+icon: /resources/images/2019-08-16-announce-gaffer-54/gaffer-54-splash.png
 ---
 
 <!-- Add an image path macro for implicit page-based file paths -->
@@ -52,7 +52,7 @@ On the node side of things, we've made notable improvements to the way you inter
 
 As with our last major release, there are some breaking changes with older scripts that you should check up on, as well as some new articles for your perusal and edification in the documentation.
 
-The [full changelog](https://github.com/GafferHQ/gaffer/releases/tag/0.54.0.0) for this update is quite a whopper. To save you some time, we've provided a summary of the most important changes below.
+The changelogs for this release are [here](https://github.com/GafferHQ/gaffer/releases/tag/0.54.0.0) and [here](https://github.com/GafferHQ/gaffer/releases/tag/0.54.1.0), but they are very long reads, in full. To save you some time, we've provided a summary of the most important changes below.
 
 Enjoy!
 
@@ -123,8 +123,8 @@ Enjoy!
 
 ### Documentation updates ###
 
-- <span class="changelog changelog-new">New</span>  [Light Linking]({{ site.docs }}/0.54.0.0/WorkingWithScenes/LightLinking/index.html)
-- <span class="changelog changelog-new">New</span>  [Tutorial: Startup Configs]({{ site.docs }}/0.54.0.0/WorkingWithThePythonScriptingAPI/TutorialStartupConfig1/index.html)
+- <span class="changelog changelog-new">New</span>  [Light Linking]({{ site.docs }}/0.54.1.0/WorkingWithScenes/LightLinking/index.html)
+- <span class="changelog changelog-new">New</span>  [Tutorial: Startup Configs]({{ site.docs }}/0.54.1.0/WorkingWithThePythonScriptingAPI/TutorialStartupConfig1/index.html)
 
 
 ### Breaking changes ###
