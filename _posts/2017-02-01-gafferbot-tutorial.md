@@ -10,4 +10,4 @@ subtitle: "Demo"
 
 Introduction to Gaffer – GafferBot Lighting and LookDev from [Cortex on Vimeo](https://vimeo.com/cortex).
 
-A video walkthrough of the tutorial from the [Gaffer documentation](http://gafferhq.org/documentation/{{ site.latestGafferVersion }}/Tutorials/BeginnerTutorial/index.html).
+A video walkthrough of the tutorial from the [Gaffer documentation](http://gafferhq.org/documentation/{{ site.latestGafferVersion }}/GettingStarted/TutorialAssemblingTheGafferBot/index.html).
