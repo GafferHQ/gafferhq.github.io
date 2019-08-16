@@ -86,6 +86,10 @@ Enjoy!
 - <span class="changelog changelog-new">New</span>  ![Arnold blocker node]({{ images }}/lightblocker-node.png)
     - An implementation of Arnold's scene-space light blocker.
     - [Example <i class="fa fa-download"></i>]({{ site.demos }}/example-lightblocker-node.gfr)
+- <span class="changelog changelog-new">New</span>  ![Orientation node]({{ images }}/orientation-node.png)
+    - Converts primvar orientation representations, and optionally randomizes their rotations.
+    - Supports Euler angle, matrix, aim vector, quaternion, and axis-angle representations.
+    - [Example <i class="fa fa-download"></i>]({{ site.demos }}/example-orientation-node.gfr)
 - <span class="changelog changelog-new">New</span>  ![SetVisualiser node]({{ images }}/setvisualiser-node.png)
     - Shades objects in the _Viewer_ with colors based on their set memberships.
     - Supports both random and chosen colors.
