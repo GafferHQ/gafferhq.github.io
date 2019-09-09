@@ -44,8 +44,8 @@ layout: base
     </div>
     <div class="row">
         <div class="col text-center">
-            <a class="btn btn-primary" href="/download/" role="button"><i class="fa fa-download"></i> Get Gaffer</a>
-            <a class="btn btn-primary ml-2" href="https://github.com/gafferHQ/gaffer"><i class="fab fa-github"></i> Follow Gaffer</a>
+            <a class="btn btn-primary" href="/download/" role="button"><i class="fa fa-download"></i> Get Gaffer {{ site.latest-release }}</a>
+            <a class="btn btn-primary ml-2" href="https://github.com/gafferHQ/gaffer"><i class="fab fa-github"></i> Follow Gaffer's Development</a>
         </div>
     </div>
 </section>
@@ -93,7 +93,7 @@ layout: base
 </section>
 
 <!-- Features -->
-<section class="container" id="features">
+<section class="container mb-3" id="features">
     <div class="row justify-content-center mb-2">
         <h1 class="text-center">Features</h1>
     </div>
@@ -129,6 +129,16 @@ layout: base
             <p class="display-4 text-center"><i class="fa fa-road"></i></p>
             <h2 class="h4 text-center">Ongoing</h2>
             <p>With new features constantly added by industry experts, development is further enhanced by VFX artists from around the world on <a href="https://github.com/gafferHQ/gaffer">GitHub</a>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Duplicate the call to action -->
+<section class="container" id="download">
+    <div class="row">
+        <div class="col text-center">
+            <a class="btn btn-primary" href="/download/" role="button"><i class="fa fa-download"></i> Get Gaffer {{ site.latest-release }}</a>
+            <a class="btn btn-primary ml-2" href="https://github.com/gafferHQ/gaffer"><i class="fab fa-github"></i> Follow Gaffer's Development</a>
         </div>
     </div>
 </section>
