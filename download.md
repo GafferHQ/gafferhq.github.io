@@ -20,7 +20,7 @@ title: Download
 - CentOS 7.5+ or Ubuntu 18.04+
 - Other popular distributions may work, but Gaffer has not been rigorously tested on them.
 
-# OSX #
+# macOS #
 
 **Gaffer {{ site.latest-release }}** (stable) compiled, containing [Appleseed {{ site.appleseed-version }}](https://appleseedhq.org). Compatible with Arnold {{ site.arnold-version }}, 3Delight {{ site.delight-version }}, and Tractor {{ site.tractor-version}}.
 
@@ -34,7 +34,7 @@ title: Download
 
 #### Requirements ####
 
-- OSX: Mavericks 10.9 or higher
+- macOS Mavericks 10.9 or higher
 
 
 # Source #
