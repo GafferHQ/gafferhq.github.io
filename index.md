@@ -14,12 +14,12 @@ layout: base
             <li data-target="#carousel-object" data-slide-to="5"></li>
         </ol>
         <div class="carousel-inner">
-            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2018/08/JFK_BO_JFK-BO-2740_ImageEngine_JurassicWorld_cineFX_v0001.001001.jpg' alt='Blue' caption='LookDev and Lighting on Jurassic Park: Fallen Kingdom' active=true %}
-            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2017/06/featuredimage.jpg' alt='Boy and robot' caption='LookDev and Lighting on Lost in Space, season 1' %}
-            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2017/07/build_logan_lookDev_v236_0173.jpg' alt='Logan' caption='LookDev on Logan' %}
-            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2018/01/704-0420-3500_ALT.1150.jpg' alt='Drogon' caption='Lighting and volumes on Game of Thrones, season 7' %}
-            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2018/08/JFK_NN_JFK-NN-0065_ImageEngine_JurassicWorld_cineFX_v0002.001001.jpg' alt='Isla Nublar volcano' caption='LookDev and Layout on Jurassic Park: Fallen Kingdom' %}
-            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2018/04/101_040_600_AO.1006.jpg' alt='Robot' caption='Procedural layout in Lost in Space, season 1' %}
+            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2018/08/JFK_BO_JFK-BO-2740_ImageEngine_JurassicWorld_cineFX_v0001.001001.jpg' caption='LookDev and Lighting on Jurassic Park: Fallen Kingdom' active=true %}
+            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2017/06/featuredimage.jpg' caption='LookDev and Lighting on Lost in Space, season 1' %}
+            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2017/07/build_logan_lookDev_v236_0173.jpg' caption='LookDev on Logan' %}
+            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2018/01/704-0420-3500_ALT.1150.jpg' caption='Lighting and volumes on Game of Thrones, season 7' %}
+            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2018/08/JFK_NN_JFK-NN-0065_ImageEngine_JurassicWorld_cineFX_v0002.001001.jpg' caption='LookDev and Layout on Jurassic Park: Fallen Kingdom' %}
+            {% include image-carousel.html img='https://image-engine.com/wp-content/uploads/2018/04/101_040_600_AO.1006.jpg' caption='Procedural layout in Lost in Space, season 1' %}
         </div>
         <a class="carousel-control-prev" href="#carousel-object" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

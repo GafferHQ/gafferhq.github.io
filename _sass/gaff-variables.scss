@@ -10,6 +10,8 @@ $theme-colors: (
   "dark": $gaff-color-dark,
   "black": $gaff-color-black,
 );
+$carousel-control-color: map-get($theme-colors, "primary");
+$carousel-indicator-active-bg: map-get($theme-colors, "primary");
 
 $code-color: #404040;
 $spacer: 2rem;
