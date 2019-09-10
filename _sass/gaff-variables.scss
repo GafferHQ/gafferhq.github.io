@@ -10,6 +10,8 @@ $theme-colors: (
   "dark": $gaff-color-dark,
   "black": $gaff-color-black,
 );
+$navbar-dark-color: #ffffff;
+$navbar-dark-hover-color: scale-color(map-get($theme-colors, "primary"), $lightness: 25%);
 $carousel-control-color: map-get($theme-colors, "primary");
 $carousel-indicator-active-bg: map-get($theme-colors, "primary");
 
