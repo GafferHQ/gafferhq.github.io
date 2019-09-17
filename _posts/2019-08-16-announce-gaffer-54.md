@@ -119,8 +119,8 @@ Enjoy!
 
 ### Documentation updates ###
 
-- <span class="changelog changelog-new">New</span>  [Light Linking]({{ site.docs }}/0.54.1.0/WorkingWithScenes/LightLinking/index.html)
-- <span class="changelog changelog-new">New</span>  [Tutorial: Startup Configs]({{ site.docs }}/0.54.1.0/WorkingWithThePythonScriptingAPI/TutorialStartupConfig1/index.html)
+- <span class="changelog changelog-new">New</span>  [Light Linking](http://gafferhq.org/documentation/0.54.1.0/WorkingWithScenes/LightLinking/index.html)
+- <span class="changelog changelog-new">New</span>  [Tutorial: Startup Configs](http://gafferhq.org/documentation/0.54.1.0/WorkingWithThePythonScriptingAPI/TutorialStartupConfig1/index.html)
 
 
 ### Breaking changes ###

@@ -78,7 +78,7 @@ Many nodes have had breaking changes or have been replaced. You can open existin
     - For baking Arnold shaders on meshes into textures.
     - [Example]({{ site.examples }}/gaffer-53-arnoldtexturebake-node-public.gfr)
 - <span class="changelog changelog-updated">Updated</span> ![Box node]({{ page.images }}/gaffer-53-box-node.png)
-    - [Boxes can now be disabled]({{ site.docs }}/{{ site.latestGafferVersion }}/WorkingWithTheNodeGraph/Box/index.html#setting-up-a-box-for-pass-through) (<kbd>D</kbd>) when their new `passThrough` plug is connected.
+    - [Boxes can now be disabled](http://gafferhq.org/documentation/0.53.0.0/WorkingWithTheNodeGraph/Box/index.html#setting-up-a-box-for-pass-through) (<kbd>D</kbd>) when their new `passThrough` plug is connected.
 
 <!-- Breaking Changes -->
 
