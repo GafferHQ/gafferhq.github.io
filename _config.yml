@@ -1,13 +1,12 @@
+baseurl: null
+copyrightYear: 2020
+demos: /resources/demos
+docs: https://www.gafferhq.org/documentation
+future: false
+gems:
+- jekyll-paginate
+google_analytics: UA-125947352-1
+images: /resources/images
+latestGafferVersion: 0.59.0.0
 paginate: 1
 permalink: /news/:title/
-baseurl:
-future: false
-google_analytics: UA-125947352-1
-gems:
-   - jekyll-paginate
-
-latestGafferVersion: 0.57.0.0
-copyrightYear: 2019
-images: "/resources/images"
-demos: "/resources/demos"
-docs: "https://www.gafferhq.org/documentation"
