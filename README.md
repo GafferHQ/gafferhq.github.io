@@ -18,6 +18,10 @@ If docker is unavailable to you, you can use ruby directly instead. `cd` to the 
 bundle exec jekyll serve
 ```
 
+## Updates ##
+
+The `update.py` script can be used to automatically update the site config to refer to the latest Gaffer release and the latest year for copyright. This is run daily as a GitHub action that produces pull requests, so generally shouldn't need to be run manually.
+
 ## Validation Process ##
 
-We use Travis CI to automatically validate the site's pages and build on PRs and merges. For more details, and information on validating locally, see [Validating Site Builds](VALIDATING.md). 
+We use Travis CI to automatically validate the site's pages and build on PRs and merges. For more details, and information on validating locally, see [Validating Site Builds](VALIDATING.md).
