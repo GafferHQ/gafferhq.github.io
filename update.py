@@ -8,6 +8,8 @@ import datetime
 import distutils.util
 import os
 import sys
+import urllib.request
+import urllib.error
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -57,6 +59,18 @@ for release in repo.get_releases() :
 	if releaseVersion > latestReleaseVersion :
 		latestRelease = release
 		latestReleaseVersion = releaseVersion
+
+# Check that the documentation for that release has been
+# uploaded, because our PR will fail in CI if the docs are
+# not there. A PR for this should be opened automatically
+# on GafferHQ/documentation using a process similar to
+# this one, so we must bide our time until it is merged.
+
+docURL = "https://gafferhq.org/documentation/{}/index.html".format( __versionToString( latestReleaseVersion ) )
+try :
+	urllib.request.urlopen( docURL )
+except urllib.error.HTTPError :
+	sys.stderr.write( "URL {} does not exist : exiting.\n".format( docURL ) )
 
 # Update the config with the latest release and year
 
