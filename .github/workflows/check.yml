@@ -1,0 +1,33 @@
+name: Check HTML and Links
+
+on:
+  push:
+  pull_request:
+
+jobs:
+
+  Update:
+
+    runs-on: ubuntu-16.04
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+
+    - name: Install Gems
+      run : |
+        gem install bundler
+        gem install html-proofer
+      env:
+        NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
+
+    - name: Build
+      run: bundle exec jekyll build
+
+    - name: Check
+      run: |
+        htmlproofer ./_site --only-4xx --check-html --empty-alt-ignore --url-ignore "/vimeo.com/"
