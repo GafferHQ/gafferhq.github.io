@@ -71,6 +71,7 @@ try :
 	urllib.request.urlopen( docURL )
 except urllib.error.HTTPError :
 	sys.stderr.write( "URL {} does not exist : exiting.\n".format( docURL ) )
+	sys.exit( 0 )
 
 # Update the config with the latest release and year
 
