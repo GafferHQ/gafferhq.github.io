@@ -24,4 +24,4 @@ The `update.py` script can be used to automatically update the site config to re
 
 ## Validation Process ##
 
-We use Travis CI to automatically validate the site's pages and build on PRs and merges. For more details, and information on validating locally, see [Validating Site Builds](VALIDATING.md).
+We validate the site builds with a [GitHub Actions workflow](https://github.com/GafferHQ/gafferhq.github.io/blob/main/.github/workflows/check.yml). The primary motivation for this is to automatically check for dead URLs with the [html-proofer](https://github.com/gjtorikian/html-proofer) tool. These test builds have the added benefit of performing rudimentary [HTML validation](https://github.com/sparklemotion/nokogiri), but this has proved inaccurate for some of the HTML5 specs.
