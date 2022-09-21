@@ -36,4 +36,4 @@ jobs:
 
     - name: Check
       run: |
-        htmlproofer ./_site --only-4xx --check-html --empty-alt-ignore --url-ignore "/vimeo.com/"
+        htmlproofer ./_site --only-4xx --ignore-urls "/vimeo.com/"
