@@ -27,7 +27,7 @@ jobs:
       run: |
         bundle config path vendor/bundle
         bundle install
-        gem install html-proofer
+        gem install html-proofer -v "<5.0.0"
       env:
         NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
 
