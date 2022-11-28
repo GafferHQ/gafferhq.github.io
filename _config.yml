@@ -7,6 +7,6 @@ gems:
 - jekyll-paginate
 google_analytics: UA-125947352-1
 images: /resources/images
-latestGafferVersion: 1.1.4.0
+latestGafferVersion: 1.1.5.0
 paginate: 1
 permalink: /news/:title/
