@@ -52,14 +52,14 @@
                 <li {% if page.url contains '/download' %} class="active" {% endif %}>
                     <a class="menu" href="{{ site.baseurl }}/download/"><i class="fa fa-download"></i> Download</a>
                 </li>
+                <li {% if page.url contains '/resources' %} class="active" {% endif %}>
+                    <a class="menu" href="{{ site.baseurl }}/resources/">Resources</a>
+                </li>
                 <li>
                     <a class="menu" href="https://github.com/gafferHQ/gaffer"><i class="fab fa-github"></i> GitHub</a>
                 </li>
                 <li>
                     <a class="menu" href="https://blog.gafferhq.org">Blog</a>
-                </li>
-                <li {% if page.url contains '/community' %} class="active" {% endif %}>
-                    <a class="menu" href="{{ site.baseurl }}/community/">Community</a>
                 </li>
                 <li {% if page.url contains '/documentation' %} class="active" {% endif %}>
                     <a class="menu" href="https://www.gafferhq.org/documentation/{{ site.latestGafferVersion }}">Documentation</a>
