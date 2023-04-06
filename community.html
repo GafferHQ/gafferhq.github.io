@@ -1,25 +1,15 @@
 ---
-title: Gaffer | Community
+title: Gaffer | Redirect
 ---
 
-{% include header.html %}
-
-{% include intro.html title="Community" image="https://image-engine.com/wp-content/uploads/2016/07/JP4RaptorCloseup.jpg" style="background-position: center 5%;" %} <!-- Jurassic World raptors-->
-
-<section id="google-group" class="container">
-    <div class="row ptb-60">
-        <div class="col-xs-12">
-            <div class="embed-responsive embed-responsive-4by3">
-                <iframe id="userForumIFrame" class="embed-responsive-item" src="javascript:void(0)" scrolling="no" frameborder="0"></iframe>
-                <script type="text/javascript">
-                    document.getElementById('userForumIFrame').src =
-                    'https://groups.google.com/forum/embed/?place=forum/gaffer-dev'
-                        + '&showsearch=true&showpopout=true&showtabs=false&hideforumtitle=true'
-                        + '&parenturl=' + encodeURIComponent(window.location.href);
-                </script>
-            </div>
-        </div>
-    </div>
-</section>
- 
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="utf-8">
+    <title>Redirecting&hellip;</title>
+    <link rel="canonical" href="{{ site.baseurl }}/resources/">
+    <script>location="{{ site.baseurl }}/resources/"</script>
+    <meta http-equiv="refresh" content="0; url={{ site.baseurl }}/resources/">
+    <meta name="robots" content="noindex">
+    <h1>Redirecting&hellip;</h1>
+    <a href="{{ site.baseurl }}/resources/">Click here if you are not redirected.</a>
+</html>
