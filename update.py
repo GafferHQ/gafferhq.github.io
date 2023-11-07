@@ -5,7 +5,6 @@ import yaml
 
 import argparse
 import datetime
-import distutils.util
 import os
 import sys
 import urllib.request
@@ -21,8 +20,8 @@ parser.add_argument(
 parser.add_argument(
 	"--set-outputs",
 	dest = "setOutputs",
-	type = distutils.util.strtobool,
-	default = "0",
+	default = False,
+	action = "store_true",
 	help = "Echo the outputs needed by `.github/workflows/update.yml`."
 )
 args = parser.parse_args()
