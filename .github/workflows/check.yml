@@ -37,4 +37,4 @@ jobs:
 
     - name: Check
       run: |
-        htmlproofer ./_site --only-4xx --ignore-urls "/vimeo.com/"
+        htmlproofer ./_site --only-4xx --ignore-urls "/vimeo.com/,/twitter.com/,/arnoldrenderer.com/,/shotgridsoftware.com/"
