@@ -11,14 +11,14 @@ title: Gaffer | Download
 <section id="download" class="container">
     <div class="row ptb-15 ptb-xs-30 pt-80">
         <div class="col-sm-5 pb-xs-60 text-center">
-            <a class="btn btn-block btn-lg btn-color-a" style="font-size: 16px" href="https://github.com/GafferHQ/gaffer/releases/download/{{ site.latestGafferVersion }}/gaffer-{{ site.latestGafferVersion }}-linux-gcc11.tar.gz"><i class="fa fa-download"></i>Gaffer for Linux (GCC 11)</a>
+            <a class="btn btn-block btn-lg btn-color-a" style="font-size: 16px" href="https://github.com/GafferHQ/gaffer/releases/download/{{ site.latestGafferVersion }}/gaffer-{{ site.latestGafferVersion }}-linux.tar.gz"><i class="fa fa-download"></i>Gaffer for Linux</a>
             <a class="btn btn-block btn-lg btn-color-a" style="font-size: 16px" href="https://github.com/GafferHQ/gaffer/releases/download/{{ site.latestGafferVersion }}/gaffer-{{ site.latestGafferVersion }}-windows.zip"><i class="fa fa-download"></i>Gaffer for Windows</a>
             <a class="btn btn-block btn-lg btn-color-line" style="font-size: 16px" href="https://www.gafferhq.org/documentation/{{ site.latestGafferVersion }}/ReleaseNotes/{{ site.latestGafferVersion }}.html"><i class="fa fa-sticky-note"></i>Release Notes</a>
         </div>
         <div class="col-sm-7">
             <ul style="padding-left: 1em; list-style-type:'➜'">
                 <li class="pb-15" style="padding-left: 6px;">How to: <a href="https://gafferhq.org/documentation/{{ site.latestGafferVersion }}/GettingStarted/InstallingGaffer/index.html">Install Gaffer</a>.</li>
-                <li class="pb-15" style="padding-left: 6px;">How to: <a href="https://gafferhq.org/documentation/{{ site.latestGafferVersion }}/GettingStarted/ConfiguringGafferForThirdPartyTools/index.html">Configure Gaffer for Arnold, 3Delight, and Tractor</a>.</li>
+                <li class="pb-15" style="padding-left: 6px;">How to: <a href="https://gafferhq.org/documentation/{{ site.latestGafferVersion }}/GettingStarted/ConfiguringGafferForThirdPartyTools/index.html">Configure Gaffer for Arnold, RenderMan, 3Delight, and Tractor</a>.</li>
                 <li class="pb-15" style="padding-left: 6px;">Once installed and configured, try the <a href="https://gafferhq.org/documentation/{{ site.latestGafferVersion }}/GettingStarted/TutorialAssemblingTheGafferBot/index.html">Getting Started tutorial</a>.</li>
             </ul>
         </div>
@@ -34,7 +34,7 @@ title: Gaffer | Download
             <ul>
                 <li>Linux (most tested on AlmaLinux 9)</li>
                 <ul>
-                    <li>GCC 11 builds require distributions with glibc 2.28 or higher, and are not compatible with CentOS 7</li>
+                    <li>Linux builds require distributions with glibc 2.28 or higher, and are not compatible with CentOS 7</li>
                 </ul>
                 <li>Windows 10/11 (64 bit)</li>
                 <ul>
@@ -50,14 +50,14 @@ title: Gaffer | Download
             <h2>3rd-Party Tools</h2>
             <p>Gaffer is compatible with the following tools:</p>
             <ul>
-                <li>Arnold 7.3 & 7.4</li>
+                <li>Arnold 7.4 & 7.5</li>
                 <ul>
-                    <li>A minimum of 7.3.1.0 is required when using Arnold 7.3</li>
                     <li>A minimum of 7.4.1.0 is required when using Arnold 7.4</li>
+                    <li>A minimum of 7.5.1.0 is required when using Arnold 7.5</li>
                 </ul>
-                <li>Cycles 4.4.0</li>
+                <li>Cycles 5.1.0</li>
                 <li>3Delight 2</li>
-                <li>RenderMan 26.3 & 27.0</li>
+                <li>RenderMan 26.3, 27.2 & 27.3</li>
                 <li>Tractor 2</li>
                 <li>Deadline support can be enabled by installing the <a href="https://github.com/hypothetical-inc/GafferDeadline">GafferDeadline</a> extension</li>
             </ul>
